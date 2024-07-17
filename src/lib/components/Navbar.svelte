@@ -1,8 +1,7 @@
 <script>
 	import { twMerge } from 'tailwind-merge';
 	import Button from './Button.svelte';
-
-	export let btnClass = '';
+	export let btnClass = 'border-2 border-white hover:bg-white hover:text-black';
 
 	let classList = '';
 	export { classList as class };
@@ -20,12 +19,3 @@
 		<Button text="Take Action" href="/take-action" class={btnClass} />
 	</div>
 </nav>
-
-<style>
-	#about-us:hover {
-		/* text-decoration: underline;
-		text-decoration-style: wavy;
-		text-decoration-color: #95e481;
-		text-decoration-thickness: 3px; */
-	}
-</style>

@@ -8,10 +8,7 @@
 </script>
 
 <button
-	class={twMerge(
-		'border-white text-white border-2 rounded-3xl px-4 transition-all hover:bg-white hover:text-black text-lg w-fit',
-		classList
-	)}
+	class={twMerge('rounded-3xl px-4 transition-all text-lg w-fit active:translate-y-0.5', classList)}
 >
 	<a {href}>{text}</a>
 </button>
