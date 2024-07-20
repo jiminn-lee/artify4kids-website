@@ -36,11 +36,13 @@
 	});
 </script>
 
-<main class="flex justify-center gap-16 mt-28">
-	{#each stats as stat}
-		<div class="text-center">
-			<h1 class="font-bold text-5xl mb-4">{stat.value}</h1>
-			<h1 class="font-semibold">{stat.label}</h1>
-		</div>
-	{/each}
-</main>
+<div class="flex flex-col mt-28 items-center">
+	<div class="flex justify-center gap-16 mb-14">
+		{#each stats as stat}
+			<div class="text-center">
+				<h1 class="font-bold text-5xl mb-4">{stat.value}</h1>
+				<h1 class="font-semibold">{stat.label}</h1>
+			</div>
+		{/each}
+	</div>
+</div>

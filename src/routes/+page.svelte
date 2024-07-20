@@ -3,23 +3,13 @@
 	import { scrollDistance, headerHeight } from '$lib/stores';
 	import Button from '$lib/components/Button.svelte';
 	import Statistics from '$lib/components/Statistics.svelte';
-
-	onMount(() => {
-		let options = {
-			animate: false,
-			patternWidth: 100,
-			patternHeight: 100,
-			grainOpacity: 0.05,
-			grainDensity: 1,
-			grainWidth: 1,
-			grainHeight: 1
-		};
-		grained('#header', options);
-
-		headerHeight.set(header.clientHeight);
-	});
+	import options from '$lib/grainedOptions';
 
 	let header;
+	onMount(() => {
+		grained('#header', options);
+		headerHeight.set(header.clientHeight);
+	});
 </script>
 
 <svelte:head>
@@ -31,9 +21,9 @@
 <main>
 	<section id="header" class="min-h-lvh flex flex-col" bind:this={header}>
 		<div class="absolute bottom-0 w-full">
-			<div class="flex w-full items-center flex-col">
-				<h1 class="text-white text-8xl font-bold mb-8">Artify4Kids</h1>
-				<p class="text-white font-light italic text-center w-[550px]">
+			<div class="flex w-full items-center flex-col text-white">
+				<h1 class="text-8xl font-bold mb-8">Artify4Kids</h1>
+				<p class=" font-light italic text-center w-[550px]">
 					<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 					<span>free</span>
 					art programs to undeserved children in the <span>Bay Area</span>. Our goal is to provide a
@@ -49,7 +39,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="content" class="flex flex-col justify-center gap-28 bg-a-yellow-bg text-a-black">
+	<section class="flex flex-col justify-center gap-28 bg-a-yellow-bg text-a-black">
 		<Statistics />
 		<div class="flex flex-col items-center">
 			<h1 class="font-bold text-5xl text-center">Get to know us</h1>
