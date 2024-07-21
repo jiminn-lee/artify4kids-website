@@ -12,10 +12,28 @@
 		<img src="" alt="" />
 		<h1 class="font-semibold text-2xl">Artify4Kids</h1>
 	</a>
-	<ul class="ml-auto text-lg list-none flex gap-7">
-		<li><a href="/about-us">About Us</a></li>
-		<li><a href="/news-blog">News & Blog</a></li>
-		<li><a href="/upcoming">Upcoming</a></li>
-		<li><Button text="Take Action" href="/take-action" class={btnClass} /></li>
+	<ul class="ml-auto text-lg list-none flex">
+		<li>
+			<a
+				href="/about-us"
+				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4 py-1 leading-relaxed"
+				>About Us</a
+			>
+		</li>
+		<li>
+			<a
+				href="/news-blog"
+				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4 py-1 leading-relaxed"
+				>News & Blog</a
+			>
+		</li>
+		<li>
+			<a
+				href="/upcoming"
+				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4 py-1 leading-relaxed"
+				>Upcoming</a
+			>
+		</li>
+		<li class="pl-4"><Button text="Take Action" href="/take-action" class={btnClass} /></li>
 	</ul>
 </nav>
