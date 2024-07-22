@@ -8,6 +8,8 @@
 		grained('#header', options);
 		headerHeight.set(header.clientHeight);
 	});
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -27,5 +29,15 @@
 			As a non-profit organization, we aim to provide accessible arts and crafts education to
 			underserved children in the Bay Area. Join us in empowering young artists!
 		</p>
+	</section>
+	<section>
+		<ul>
+			{#each data.posts as post}
+				<li>
+					<a href={`news-blog/${post.slug}`}>{post.title}</a>
+					<p>{post.date}</p>
+				</li>
+			{/each}
+		</ul>
 	</section>
 </main>

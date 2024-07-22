@@ -36,13 +36,17 @@
 	});
 </script>
 
-<div class="flex flex-col mt-28 items-center">
-	<div class="flex justify-center gap-16 mb-14">
-		{#each stats as stat}
-			<div class="text-center">
-				<h1 class="font-bold text-5xl mb-4">{stat.value}</h1>
-				<h1 class="font-semibold">{stat.label}</h1>
-			</div>
-		{/each}
-	</div>
+<div id="statistics-container" class="flex justify-center mt-32 mb-10 gap-16">
+	{#each stats as stat}
+		<div class="text-center group transition-all">
+			<h1 class="font-bold text-5xl mb-4 text-a-red group-hover:text-a-red-hover transition-all">
+				{stat.value}
+			</h1>
+			<h1
+				class="font-semibold text-a-grey group-hover:text-a-black transition-all group-hover:bg-a-yellow"
+			>
+				{stat.label}
+			</h1>
+		</div>
+	{/each}
 </div>

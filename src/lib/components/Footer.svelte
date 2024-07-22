@@ -10,10 +10,30 @@
 	<div class="flex justify-center">
 		<ul class="w-56 font-light flex-col flex items-center gap-2 text-a-grey">
 			<li><h1 class=" font-normal text-lg mb-2 text-a-black">Menu</h1></li>
-			<li><a href="/about-us">About Us</a></li>
-			<li><a href="/news-blog">News & Blog</a></li>
-			<li><a href="/upcoming">Upcoming</a></li>
-			<li><a href="/take-action">Take Action</a></li>
+			<li>
+				<a
+					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					href="/about-us">About Us</a
+				>
+			</li>
+			<li>
+				<a
+					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					href="/news-blog">News & Blog</a
+				>
+			</li>
+			<li>
+				<a
+					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					href="/upcoming">Upcoming</a
+				>
+			</li>
+			<li>
+				<a
+					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					href="/take-action">Take Action</a
+				>
+			</li>
 		</ul>
 		<ul class="w-56 font-light flex-col flex items-center gap-2 text-a-grey">
 			<li><h1 class=" font-normal text-lg mb-2 text-a-black">Social</h1></li>
@@ -22,7 +42,7 @@
 					href={info.instagram}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
 				>
 					<svg
 						fill="#454343"
@@ -38,7 +58,12 @@
 				</a>
 			</li>
 			<li>
-				<a href={info.x} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">
+				<a
+					href={info.x}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+				>
 					<svg
 						fill="#454343"
 						width="20"
@@ -56,7 +81,7 @@
 					href={info.linkedin}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
 				>
 					<svg
 						fill="#454343"
@@ -75,7 +100,7 @@
 					href={info.tiktok}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
 					><svg
 						fill="#454343"
 						width="20"
@@ -96,7 +121,7 @@
 					href={info.addressLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
 				>
 					<svg
 						fill="#454343"
@@ -116,7 +141,7 @@
 					href={info.phoneLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
 				>
 					<svg
 						fill="#454343"
@@ -135,7 +160,7 @@
 					href={info.emailLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2"
+					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
 				>
 					<svg
 						fill="#454343"
