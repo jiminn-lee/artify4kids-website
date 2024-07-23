@@ -34,16 +34,16 @@
 			<div class="flex justify-center">
 				<img
 					loading="lazy"
-					src="photos/sm-1.png"
+					src="images/sm-1.png"
 					alt=""
 					class="slideInBottom object-bottom object-none anima"
 					id="sm-1"
 				/>
-				<img loading="lazy" src="photos/lg-1.png" alt="" class="slideInBottom" id="lg-1" />
-				<img loading="lazy" src="photos/lg-2.png" alt="" class="slideInBottom" id="lg-2" />
+				<img loading="lazy" src="images/lg-1.png" alt="" class="slideInBottom" id="lg-1" />
+				<img loading="lazy" src="images/lg-2.png" alt="" class="slideInBottom" id="lg-2" />
 				<img
 					loading="lazy"
-					src="photos/sm-2.png"
+					src="images/sm-2.png"
 					alt=""
 					class="slideInBottom object-bottom object-none"
 					id="sm-2"
@@ -55,7 +55,7 @@
 		<Statistics />
 		<div class="flex items-center">
 			<img
-				src="photos/gtku.jpg"
+				src="images/gtku.jpg"
 				alt=""
 				class="rounded-3xl mr-8 scale-90 transition-transform hover:scale-95 duration-500"
 			/>
@@ -87,14 +87,14 @@
 				/>
 			</div>
 			<img
-				src="photos/atlu.jpg"
+				src="images/atlu.jpg"
 				alt=""
 				class="rounded-3xl ml-8 scale-90 transition-transform hover:scale-95 duration-500"
 			/>
 		</div>
 		<div class="flex items-center">
 			<img
-				src="photos/uap.jpg"
+				src="images/uap.jpg"
 				alt=""
 				class="rounded-3xl mr-8 scale-90 transition-transform hover:scale-95 duration-500"
 			/>

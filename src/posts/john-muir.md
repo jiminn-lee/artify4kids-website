@@ -1,10 +1,11 @@
 ---
-title: Artify at Muir Elementary School's Mid-Autumn Festival
+title: Muir Elementary School's Mid-Autumn Festival
 date: '2023-10-22'
+thumbnail: '/post-images/john-muir.webp'
 published: true
 ---
 
-# Artify at Muir Elementary School's Mid-Autumn Festival
+![john muir]({thumbnail})
 
 On Friday, September 29, Artify officially had its first event at John Muir Elementary School's Mid-Autumn Festival. Our volunteers began setting up our booth at around 3:45, putting up the tablecloth, preparing the posters, and laying out the cookies. We began preparing the bubble and paint mixture for the activity at around 4:00 and making samples.
 
