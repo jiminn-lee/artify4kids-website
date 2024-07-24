@@ -33,10 +33,10 @@
 	</p>
 </section>
 <article class="bg-a-blue-bg flex justify-center" id="article">
-	<div class="w-[1000px] bg-white rounded-3xl border-2 border-a-black/10 my-28">
-		<h1>{data.meta.title}</h1>
-		<h2>Published at {data.meta.date}</h2>
-		<p>
+	<div class="w-[1000px] bg-white rounded-3xl border-2 border-a-black/10 my-28 px-28 py-20">
+		<h1 class="text-4xl font-bold">{data.meta.title}</h1>
+		<h2 class="mb-14 mt-3">Published {data.meta.date}</h2>
+		<p class="font-light leading-relaxed">
 			<svelte:component this={data.content} />
 		</p>
 	</div>
