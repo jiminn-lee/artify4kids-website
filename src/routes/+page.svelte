@@ -10,9 +10,13 @@
 		grained('#header', options);
 		headerHeight.set(header.clientHeight);
 	});
+
+	export let data;
 </script>
 
 <svelte:head>
+	<title>Artify4Kids</title>
+	<meta property="og:title" content="Artify4Kids" />
 	<script src="src/lib/grained.js"></script>
 </svelte:head>
 
@@ -51,8 +55,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col justify-center items-center gap-20 bg-a-yellow-bg text-a-black">
-		<Statistics />
+	<section class="flex flex-col justify-center items-center gap-24 bg-a-yellow-bg text-a-black">
+		<Statistics stats={data.statObjects} />
 		<div class="flex items-center">
 			<img
 				src="images/gtku.jpg"

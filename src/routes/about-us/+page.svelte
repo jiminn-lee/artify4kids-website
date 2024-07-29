@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight } from '$lib/stores';
 	import options from '$lib/grainedOptions';
+	import info from '$lib/info';
 
 	let header;
 	onMount(() => {
@@ -11,6 +12,8 @@
 </script>
 
 <svelte:head>
+	<title>About Us | Artify4Kids</title>
+	<meta property="og:title" content="About Us | Artify4Kids" />
 	<script src="src/lib/grained.js"></script>
 </svelte:head>
 
@@ -28,8 +31,43 @@
 			underserved children in the Bay Area. Join us in empowering young artists!
 		</p>
 	</section>
-	<section class="h-[2000px] bg-a-green-bg"></section>
+	<section
+		class="flex flex-col justify-center items-center gap-24 bg-a-green-bg text-a-black py-28"
+	>
+		<div class="flex items-center gap-10">
+			<h1 class="font-bold text-5xl w-fit text-right">Our misson <br /> & approach</h1>
+			<p class="w-[550px] text-a-grey">
+				At Artify4Kids, we believe that every child deserves access to art education. Our programs
+				provide a safe and nurturing environment for children to channel their creativity and
+				develop new skills. We prioritize diversity and inclusivity in all our programs, ensuring
+				that every child feels supported and valued. Let's empower young artists and build a
+				brighter future for our community!
+			</p>
+		</div>
+		<div class="flex flex-col items-center gap-10">
+			<h1 class="font-bold text-5xl">Meet the team</h1>
+			<div class="flex gap-5 flex-wrap justify-center w-3/4">
+				{#each info.team as member}
+					<div
+						id="team"
+						style={`background-image: url(${member.img});`}
+						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-white bg-[length:100%_auto] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
+					>
+						<div class="h-[65%]"></div>
+						<div class="p-4 bg-white">
+							<h2 class=" text-a-grey font-light">{member.position}</h2>
+							<h1 class="font-bold text-xl text-a-black">{member.name}</h1>
+							<a href={`mailto:${member.email}`} class="font-light underline text-a-red"
+								>{member.email}</a
+							>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+		<div>
+			<h1 class="font-bold text-5xl">Frequently asked questions</h1>
+			<div></div>
+		</div>
+	</section>
 </main>
-
-<style>
-</style>

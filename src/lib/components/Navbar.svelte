@@ -7,9 +7,9 @@
 	export { classList as class };
 </script>
 
-<nav class={twMerge('fixed top-0 w-full z-10 flex text-white px-12 py-8', classList)}>
-	<a href="/">
-		<img src="" alt="" />
+<nav class={twMerge('fixed top-0 w-full z-10 flex text-white px-12 py-6 items-center', classList)}>
+	<a href="/" class="flex items-center">
+		<img src="/favicon-96.png" alt="" class="w-10 mr-2" />
 		<h1 class="font-semibold text-2xl">Artify4Kids</h1>
 	</a>
 	<ul class="ml-auto text-lg list-none flex">

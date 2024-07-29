@@ -2,10 +2,11 @@
 	import info from '$lib/info';
 </script>
 
-<footer class="border-2 border-a-black/10 pt-12">
-	<div class="flex justify-center mb-12">
+<footer class="border-2 border-a-black/10 pt-10">
+	<a href="/" class="flex justify-center items-center mb-10">
+		<img src="/favicon-96.png" alt="" class="w-10 mr-2" />
 		<h1 class="font-semibold text-2xl text-a-black">Artify4Kids</h1>
-	</div>
+	</a>
 	<hr class="border-a-black/10 rounded-full w-1/2 ml-auto mr-auto mb-6" />
 	<div class="flex justify-center">
 		<ul class="w-56 font-light flex-col flex items-center gap-2 text-a-grey">

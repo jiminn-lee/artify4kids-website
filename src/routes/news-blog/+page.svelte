@@ -13,6 +13,8 @@
 </script>
 
 <svelte:head>
+	<title>News & Blog | Artify4Kids</title>
+	<meta property="og:title" content="News & Blog | Artify4Kids" />
 	<script src="src/lib/grained.js"></script>
 </svelte:head>
 
@@ -31,16 +33,17 @@
 		</p>
 	</section>
 	<section class="bg-a-blue-bg">
-		<div class="flex py-32 gap-10 justify-center">
+		<div class="flex py-32 gap-5 flex-wrap justify-center w-3/4 ml-auto mr-auto">
 			{#each data.posts as post}
 				<a href={`news-blog/${post.slug}`} class="h-96 w-72">
 					<div
-						class={`bg-[url('${post.thumbnail}')] h-96 w-72 bg-no-repeat rounded-3xl bg-white bg-[length:auto_55%] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
+						style={`background-image: url(${post.thumbnail});`}
+						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-[length:auto_55%] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
 					>
 						<div class="h-[55%]"></div>
 						<div class="p-4">
 							<h1 class="font-bold text-xl text-a-black">{post.title}</h1>
-							<h2 class="pt-2 text-a-gre font-light">{post.date}</h2>
+							<h2 class="pt-2 text-a-grey font-light">{post.date}</h2>
 						</div>
 					</div>
 				</a>
@@ -48,3 +51,9 @@
 		</div>
 	</section>
 </main>
+
+<style>
+	* {
+		position: relative;
+	}
+</style>

@@ -11,6 +11,8 @@
 </script>
 
 <svelte:head>
+	<title>Take Action | Artify4Kids</title>
+	<meta property="og:title" content="About Us | Artify4Kids" />
 	<script src="src/lib/grained.js"></script>
 </svelte:head>
 
