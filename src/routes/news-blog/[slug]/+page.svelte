@@ -33,11 +33,29 @@
 	</p>
 </section>
 <article class="bg-a-blue-bg flex justify-center" id="article">
-	<div class="w-[1000px] bg-white rounded-3xl border-2 border-a-black/10 my-28 px-28 py-20">
-		<h1 class="text-4xl font-bold">{data.meta.title}</h1>
-		<h2 class="mb-14 mt-3">Published {data.meta.date}</h2>
-		<p class="font-light leading-relaxed">
-			<svelte:component this={data.content} />
-		</p>
+	<div class="w-[1000px] bg-white rounded-3xl border-2 border-a-black/10 my-28">
+		<div class="pl-12 pt-12 pb-7 text-a-grey font-light flex">
+			<a
+				href="/news-blog"
+				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl p-2"
+				><svg
+					fill="#454343"
+					height="20"
+					width="20"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 448 512"
+					><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+						d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+					/></svg
+				></a
+			>
+		</div>
+		<div class="px-28 pb-28">
+			<h1 class="text-4xl font-bold">{data.meta.title}</h1>
+			<h2 class="mb-14 mt-3">Published {data.meta.date}</h2>
+			<p class="font-light leading-relaxed">
+				<svelte:component this={data.content} />
+			</p>
+		</div>
 	</div>
 </article>

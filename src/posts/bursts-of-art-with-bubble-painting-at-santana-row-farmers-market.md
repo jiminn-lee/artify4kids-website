@@ -1,0 +1,15 @@
+---
+title: Bursts of Art with Bubble Painting at Santana Row Farmers’ Market!
+date: '2024-05-26'
+thumbnail: '/post-images/bursts-of-art-with-bubble-painting-at-santana-row-farmers-market-1.webp'
+published: true
+---
+
+![Artify's booth at the Santana Row farmers' market]({thumbnail})<br />
+Last Wednesday, May 26th, Santana Row’s lively atmosphere was even more colorful as Artify partnered with the California Farmers' Market Association to host a special event to teach kids to make abstract art with bubbling painting.<br /><br />
+The premise behind bubble art is rather straightforward, but the beauty behind its simplicity is that the possibilities of art pieces to make are endless! By combining paint and dish soap, we created a colorful mixture which kids then blew bubbles into with a straw. When they pressed their paper onto these bubbles, a colorful pattern was printed on. As they continued, colors and lines layered onto each other on the page, creating a unique design.<br /><br />
+Children of all ages gathered around the booth, attracted by the various bright pigments, and stayed for the exciting unpredictability of bubble painting. It's an activity that combines the joy of playing with bubbles and the creativity of painting, making it an instant hit with children. Our booth was stocked with all the necessary supplies: vibrant paint mixtures, disposable straws, and plenty of paper for the young artists to create their masterpieces. With the guidance of enthusiastic Artify volunteers, the children quickly got the hang of mixing paint with bubble solution and blowing bubbles onto their paper canvases. The resulting artwork was a beautiful array of abstract patterns, each one unique and vibrant.<br /><br />
+The excitement in the area was contagious: children, parents, and volunteers alike were sharing laughs and jokes over the messy but satisfying art-making process. While the young artists learned a new way to create art, we at Artify also gained a new experience in teaching them. One volunteer, Nathan Nguyen, recounts, “The event gave me opportunities to connect to new people and do things outside my comfort zone.”<br /><br />
+![Nathan Nguyen and his student proudly holding up their bubble art](/post-images/bursts-of-art-with-bubble-painting-at-santana-row-farmers-market-2.webp)
+Nathan Nguyen and his student proudly holding up their bubble art.<br /><br />
+Seeing the smiles on everyones’ faces reminded us of our love for bringing the enjoyment and boundlessness of art to our community. The event was a resounding success, bringing everyone together in a celebration of fun, creativity, and togetherness. We are especially grateful to everyone who made this event possible: the California Farmers’ Market Association, our Artify volunteers, and all the wonderful families that attended. If you missed out on the bubble art fun this time, don’t worry -- we have many more exciting events coming up! Stay up to date by signing up for our mailing list and following our social media!<br /><br />

@@ -41,9 +41,9 @@
 						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-[length:auto_55%] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
 					>
 						<div class="h-[55%]"></div>
-						<div class="p-4 bg-white h-[45%] rounded-3xl">
+						<div class="p-4 bg-white h-[45%] rounded-b-3xl">
+							<h2 class="text-a-grey font-light">{post.date}</h2>
 							<h1 class="font-bold text-xl text-a-black">{post.title}</h1>
-							<h2 class="pt-2 text-a-grey font-light">{post.date}</h2>
 						</div>
 					</div>
 				</a>
