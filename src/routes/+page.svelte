@@ -37,19 +37,17 @@
 			</div>
 			<div class="flex justify-center">
 				<img
-					loading="lazy"
 					src="images/sm-1.png"
 					alt=""
-					class="slideInBottom object-bottom object-none anima"
+					class="slideInBottomSm hobject-bottom h-[40vh]"
 					id="sm-1"
 				/>
-				<img loading="lazy" src="images/lg-1.png" alt="" class="slideInBottom" id="lg-1" />
-				<img loading="lazy" src="images/lg-2.png" alt="" class="slideInBottom" id="lg-2" />
+				<img src="images/lg-1.png" alt="" class="slideInBottom h-[45vh]" id="lg-1" />
+				<img src="images/lg-2.png" alt="" class="slideInBottom h-[45vh]" id="lg-2" />
 				<img
-					loading="lazy"
 					src="images/sm-2.png"
 					alt=""
-					class="slideInBottom object-bottom object-none"
+					class="slideInBottomSm object-bottom h-[40vh]"
 					id="sm-2"
 				/>
 			</div>
@@ -57,8 +55,9 @@
 	</section>
 	<section class="flex flex-col justify-center items-center gap-24 bg-a-yellow-bg text-a-black">
 		<Statistics stats={data.statObjects} />
-		<div class="flex items-center">
+		<div class="flex items-center flex-wrap">
 			<img
+				loading="lazy"
 				src="images/gtku.jpg"
 				alt=""
 				class="rounded-3xl mr-8 scale-90 transition-transform hover:scale-95 duration-500"
@@ -76,7 +75,7 @@
 				/>
 			</div>
 		</div>
-		<div class="flex items-center">
+		<div class="flex items-center flex-wrap-reverse">
 			<div class="w-[550px]">
 				<h1 class="font-bold text-5xl text-right">All the latest updates</h1>
 				<p class="font-light text-right my-4 text-a-grey">
@@ -91,16 +90,18 @@
 				/>
 			</div>
 			<img
+				loading="lazy"
 				src="images/atlu.jpg"
 				alt=""
 				class="rounded-3xl ml-8 scale-90 transition-transform hover:scale-95 duration-500"
 			/>
 		</div>
-		<div class="flex items-center">
+		<div class="flex items-center flex-wrap">
 			<img
 				src="images/uap.jpg"
 				alt=""
 				class="rounded-3xl mr-8 scale-90 transition-transform hover:scale-95 duration-500"
+				loading="lazy"
 			/>
 			<div class="w-[550px]">
 				<h1 class="font-bold text-5xl text-left">Upcoming art projects</h1>
@@ -116,9 +117,12 @@
 				/>
 			</div>
 		</div>
-		<div class="flex flex-col items-center mb-28">
-			<h1 class="font-bold text-5xl text-center">How you can help</h1>
-			<p class="font-light text-center my-4 w-[550px] text-a-grey">
+		<div
+			id="take-action"
+			class="flex flex-col items-center mb-28 bg-cover px-48 py-32 rounded-3xl bg-center transition-transform hover:scale-105 duration-500"
+		>
+			<h1 class="font-bold text-5xl text-center text-white">How you can help</h1>
+			<p class="font-light text-center my-4 w-[550px] text-gray-200">
 				There are several ways you can help us empower young artists. You can donate to our cause,
 				volunteer your time, or spread the word about our organization.
 			</p>
@@ -147,6 +151,12 @@
 		animation-duration: 0.5s;
 		animation-fill-mode: both;
 	}
+	.slideInBottomSm {
+		animation-name: slideInBottomSm;
+		animation-timing-function: ease-out;
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+	}
 
 	#sm-1,
 	#sm-2 {
@@ -158,7 +168,22 @@
 			transform: translateY(400px);
 		}
 		to {
-			transform: translateX(0);
+			transform: translateY(0px);
 		}
+	}
+
+	@keyframes slideInBottomSm {
+		from {
+			transform: translateY(400px);
+		}
+		to {
+			transform: translateY(50px);
+		}
+	}
+
+	#take-action {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hych.jpg');
+		background-size: cover;
+		background-position: center;
 	}
 </style>

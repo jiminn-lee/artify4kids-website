@@ -21,7 +21,7 @@
 <main>
 	<section
 		id="header"
-		class="h-[50vh] flex flex-col justify-center items-center bg-a-red"
+		class="h-[40vh] flex flex-col justify-center items-center bg-a-red"
 		bind:this={header}
 	>
 		<h1 class="text-white text-8xl font-bold mb-8">Take Action</h1>

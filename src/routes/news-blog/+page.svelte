@@ -23,7 +23,7 @@
 <main>
 	<section
 		id="header"
-		class="h-[50vh] flex flex-col justify-center items-center bg-a-blue"
+		class="h-[40vh] flex flex-col justify-center items-center bg-a-blue"
 		bind:this={header}
 	>
 		<h1 class="text-white text-8xl font-bold mb-8">News & Blog</h1>
@@ -41,7 +41,7 @@
 						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-[length:auto_55%] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
 					>
 						<div class="h-[55%]"></div>
-						<div class="p-4">
+						<div class="p-4 bg-white h-[45%] rounded-3xl">
 							<h1 class="font-bold text-xl text-a-black">{post.title}</h1>
 							<h2 class="pt-2 text-a-grey font-light">{post.date}</h2>
 						</div>

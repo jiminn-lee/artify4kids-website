@@ -22,7 +22,7 @@
 <main>
 	<section
 		id="header"
-		class="h-[50vh] flex flex-col justify-center items-center bg-a-green"
+		class="h-[40vh] flex flex-col justify-center items-center bg-a-green"
 		bind:this={header}
 	>
 		<h1 class="text-white text-8xl font-bold mb-8">About Us</h1>
@@ -34,9 +34,9 @@
 	<section
 		class="flex flex-col justify-center items-center gap-24 bg-a-green-bg text-a-black py-28"
 	>
-		<div class="flex items-center gap-10">
+		<div class="flex items-center gap-12">
 			<h1 class="font-bold text-5xl w-fit text-right">Our misson <br /> & approach</h1>
-			<p class="w-[550px] text-a-grey">
+			<p class="w-[550px] text-a-grey font-light">
 				At Artify4Kids, we believe that every child deserves access to art education. Our programs
 				provide a safe and nurturing environment for children to channel their creativity and
 				develop new skills. We prioritize diversity and inclusivity in all our programs, ensuring
@@ -44,20 +44,22 @@
 				brighter future for our community!
 			</p>
 		</div>
-		<div class="flex flex-col items-center gap-10">
+		<div class="flex flex-col items-center gap-12">
 			<h1 class="font-bold text-5xl">Meet the team</h1>
 			<div class="flex gap-5 flex-wrap justify-center w-3/4">
 				{#each info.team as member}
 					<div
 						id="team"
 						style={`background-image: url(${member.img});`}
-						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-white bg-[length:100%_auto] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
+						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-white bg-[length:100%_auto] bg-[center_top_-1rem] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
 					>
 						<div class="h-[65%]"></div>
-						<div class="p-4 bg-white">
-							<h2 class=" text-a-grey font-light">{member.position}</h2>
+						<div class="p-4 bg-white w-full">
+							<h2 class=" text-a-grey font-light pt-2">{member.position}</h2>
 							<h1 class="font-bold text-xl text-a-black">{member.name}</h1>
-							<a href={`mailto:${member.email}`} class="font-light underline text-a-red"
+							<a
+								href={`mailto:${member.email}`}
+								class="font-light underline text-a-red transition-all hover:text-a-red-hover"
 								>{member.email}</a
 							>
 						</div>
@@ -71,3 +73,9 @@
 		</div>
 	</section>
 </main>
+
+<style>
+	* {
+		position: relative;
+	}
+</style>
