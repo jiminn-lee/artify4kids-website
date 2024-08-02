@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight } from '$lib/stores';
+	import faqs from '$lib/faqs';
 	import options from '$lib/grainedOptions';
 	import info from '$lib/info';
 
@@ -9,6 +10,19 @@
 		grained('#header', options);
 		headerHeight.set(header.clientHeight);
 	});
+
+	let faqAnswers = [];
+	let faqIsToggled = [];
+
+	function faqToggle(index) {
+		if (faqIsToggled[index] != true) {
+			faqAnswers[index].classList.remove('hidden');
+			faqIsToggled[index] = true;
+		} else {
+			faqAnswers[index].classList.add('hidden');
+			faqIsToggled[index] = false;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -68,8 +82,20 @@
 			</div>
 		</div>
 		<div>
-			<h1 class="font-bold text-5xl">Frequently asked questions</h1>
-			<div></div>
+			<h1 class="font-bold text-5xl text-center mb-12">Frequently asked questions</h1>
+			<div class="flex flex-col gap-6">
+				{#each faqs as faq (faq.index)}
+					<div class="w-[1000px] bg-white rounded-3xl px-8 py-4 border-2 border-a-black/10">
+						<div class="flex justify-between">
+							<h1 class="font-semibold text-2xl">{faq.question}</h1>
+							<button on:click={() => faqToggle(faq.index)}>Test</button>
+						</div>
+						<p bind:this={faqAnswers[faq.index]} class="hidden font-light text-a-grey mt-2">
+							{faq.answer}
+						</p>
+					</div>
+				{/each}
+			</div>
 		</div>
 	</section>
 </main>

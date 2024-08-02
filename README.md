@@ -10,5 +10,5 @@ To-do:
 - [ ] format dates in blog
 - [ ] past artwork in home page
 - [ ] take action
-- [ ] faq
+- [ ] improve faq
 - [ ] responsive
