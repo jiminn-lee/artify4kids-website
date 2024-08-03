@@ -7,8 +7,8 @@ To-do:
 - [x] implement google calender embed in upcoming
 - [x] about us w/ mission statement, team
 - [x] update tiktok link
+- [x] improve faq
+- [ ] responsive
 - [ ] format dates in blog
 - [ ] past artwork in home page
 - [ ] take action
-- [ ] improve faq
-- [ ] responsive

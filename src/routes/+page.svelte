@@ -119,10 +119,10 @@
 		</div>
 		<div
 			id="take-action"
-			class="flex flex-col items-center mb-28 bg-cover px-48 py-32 rounded-3xl bg-center transition-transform hover:scale-105 duration-500"
+			class="max-w-[1000px] flex flex-col items-center mb-28 bg-cover px-48 py-32 rounded-3xl bg-center transition-transform hover:scale-105 duration-500"
 		>
 			<h1 class="font-bold text-5xl text-center text-white">How you can help</h1>
-			<p class="font-light text-center my-4 w-[550px] text-gray-200">
+			<p class="font-light text-center my-4 text-gray-200">
 				There are several ways you can help us empower young artists. You can donate to our cause,
 				volunteer your time, or spread the word about our organization.
 			</p>

@@ -16,10 +16,13 @@
 
 	function faqToggle(index) {
 		if (faqIsToggled[index] != true) {
-			faqAnswers[index].classList.remove('hidden');
+			faqAnswers[index].classList.remove('h-0');
+			faqAnswers[index].classList.remove('invisible');
+
 			faqIsToggled[index] = true;
 		} else {
-			faqAnswers[index].classList.add('hidden');
+			faqAnswers[index].classList.add('h-0');
+			faqAnswers[index].classList.add('invisible');
 			faqIsToggled[index] = false;
 		}
 	}
@@ -48,9 +51,9 @@
 	<section
 		class="flex flex-col justify-center items-center gap-24 bg-a-green-bg text-a-black py-28"
 	>
-		<div class="flex items-center gap-12">
+		<div class="flex items-center gap-12 flex-wrap mx-10">
 			<h1 class="font-bold text-5xl w-fit text-right">Our misson <br /> & approach</h1>
-			<p class="w-[550px] text-a-grey font-light">
+			<p class="max-w-[550px] text-a-grey font-light">
 				At Artify4Kids, we believe that every child deserves access to art education. Our programs
 				provide a safe and nurturing environment for children to channel their creativity and
 				develop new skills. We prioritize diversity and inclusivity in all our programs, ensuring
@@ -83,17 +86,27 @@
 		</div>
 		<div>
 			<h1 class="font-bold text-5xl text-center mb-12">Frequently asked questions</h1>
-			<div class="flex flex-col gap-6">
+			<div class="flex flex-col gap-6 px-10">
 				{#each faqs as faq (faq.index)}
-					<div class="w-[1000px] bg-white rounded-3xl px-8 py-4 border-2 border-a-black/10">
-						<div class="flex justify-between">
+					<button
+						on:click={() => faqToggle(faq.index)}
+						class="max-w-[1000px] bg-white rounded-3xl px-8 border-2 border-a-black/10 py-3"
+					>
+						<div class="flex justify-between items-center">
 							<h1 class="font-semibold text-2xl">{faq.question}</h1>
-							<button on:click={() => faqToggle(faq.index)}>Test</button>
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+								><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+									d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+								/></svg
+							>
 						</div>
-						<p bind:this={faqAnswers[faq.index]} class="hidden font-light text-a-grey mt-2">
+						<p
+							bind:this={faqAnswers[faq.index]}
+							class="font-light text-a-grey text-left h-0 invisible leading-relaxed"
+						>
 							{faq.answer}
 						</p>
-					</div>
+					</button>
 				{/each}
 			</div>
 		</div>
