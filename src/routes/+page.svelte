@@ -3,11 +3,11 @@
 	import { scrollDistance, headerHeight } from '$lib/stores';
 	import Button from '$lib/components/Button.svelte';
 	import Statistics from '$lib/components/Statistics.svelte';
-	import options from '$lib/grainedOptions';
+	import grainedOptions from '$lib/utils';
 
 	let header;
 	onMount(() => {
-		grained('#header', options);
+		grained('#header', grainedOptions);
 		headerHeight.set(header.clientHeight);
 	});
 
@@ -26,7 +26,7 @@
 	<section id="header" class="min-h-lvh flex flex-col" bind:this={header}>
 		<div class="absolute bottom-0 w-full">
 			<div class="flex w-full items-center flex-col text-white">
-				<h1 class="text-8xl font-bold mb-8">Artify4Kids</h1>
+				<h1 class="text-8xl font-bold mb-4">Artify4Kids</h1>
 				<p class=" font-light italic text-center w-[550px]">
 					<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 					<span>free</span>

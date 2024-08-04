@@ -1,11 +1,12 @@
 <script>
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight } from '$lib/stores';
-	import options from '$lib/grainedOptions';
+	import grainedOptions from '$lib/utils';
+	import { formatDate } from '$lib/utils';
 
 	let header;
 	onMount(() => {
-		grained('#header', options);
+		grained('#header', grainedOptions);
 		headerHeight.set(header.clientHeight);
 	});
 
@@ -52,7 +53,7 @@
 		</div>
 		<div class="px-28 pb-28">
 			<h1 class="text-4xl font-bold">{data.meta.title}</h1>
-			<h2 class="mb-14 mt-3">Published {data.meta.date}</h2>
+			<h2 class="mb-14 mt-3">Published {formatDate(data.meta.date)}</h2>
 			<p class="font-light leading-relaxed">
 				<svelte:component this={data.content} />
 			</p>

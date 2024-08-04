@@ -8,7 +8,7 @@ To-do:
 - [x] about us w/ mission statement, team
 - [x] update tiktok link
 - [x] improve faq
+- [x] format dates in blog
 - [ ] responsive
-- [ ] format dates in blog
 - [ ] past artwork in home page
 - [ ] take action

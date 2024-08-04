@@ -1,11 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight } from '$lib/stores';
-	import options from '$lib/grainedOptions';
+	import grainedOptions from '$lib/utils';
 
 	let header;
 	onMount(() => {
-		grained('#header', options);
+		grained('#header', grainedOptions);
 		headerHeight.set(header.clientHeight);
 	});
 </script>
@@ -24,7 +24,7 @@
 		class="h-[40vh] flex flex-col justify-center items-center bg-a-red"
 		bind:this={header}
 	>
-		<h1 class="text-white text-8xl font-bold mb-8">Take Action</h1>
+		<h1 class="text-white text-8xl font-bold mb-4">Take Action</h1>
 		<p class="text-white font-light italic text-center w-[550px]">
 			Whether you lean towards participating in person or if you'd rather contribute from the
 			coziness of your home, we have procedures tailored to your preferences!

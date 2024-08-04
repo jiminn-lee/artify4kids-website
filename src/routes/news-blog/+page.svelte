@@ -1,11 +1,12 @@
 <script>
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight } from '$lib/stores';
-	import options from '$lib/grainedOptions';
+	import grainedOptions from '$lib/utils';
+	import { formatDate } from '$lib/utils';
 
 	let header;
 	onMount(() => {
-		grained('#header', options);
+		grained('#header', grainedOptions);
 		headerHeight.set(header.clientHeight);
 	});
 
@@ -26,7 +27,7 @@
 		class="h-[40vh] flex flex-col justify-center items-center bg-a-blue"
 		bind:this={header}
 	>
-		<h1 class="text-white text-8xl font-bold mb-8">News & Blog</h1>
+		<h1 class="text-white text-8xl font-bold mb-4">News & Blog</h1>
 		<p class="text-white font-light italic text-center w-[550px]">
 			As a non-profit organization, we aim to provide accessible arts and crafts education to
 			underserved children in the Bay Area. Join us in empowering young artists!
@@ -42,7 +43,7 @@
 					>
 						<div class="h-[55%]"></div>
 						<div class="p-4 bg-white h-[45%] rounded-b-3xl">
-							<h2 class="text-a-grey font-light">{post.date}</h2>
+							<h2 class="text-a-grey font-light">{formatDate(post.date)}</h2>
 							<h1 class="font-bold text-xl text-a-black">{post.title}</h1>
 						</div>
 					</div>
