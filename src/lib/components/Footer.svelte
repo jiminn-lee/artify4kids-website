@@ -3,47 +3,47 @@
 </script>
 
 <footer class="border-2 border-a-black/10 pt-10">
-	<a href="/" class="flex justify-center items-center mb-10">
-		<img src="/favicon-96.png" alt="" class="w-10 mr-2" />
-		<h1 class="font-semibold text-2xl text-a-black">Artify4Kids</h1>
+	<a href="/" class="mb-10 flex items-center justify-center">
+		<img src="/favicon-96.png" alt="" class="mr-2 w-10" />
+		<h1 class="text-2xl font-semibold text-a-black">Artify4Kids</h1>
 	</a>
-	<hr class="border-a-black/10 rounded-full w-1/2 ml-auto mr-auto mb-6" />
+	<hr class="mb-6 ml-auto mr-auto w-1/2 rounded-full border-a-black/10" />
 	<div class="flex justify-center">
-		<ul class="w-56 font-light flex-col flex items-center gap-2 text-a-grey">
-			<li><h1 class=" font-normal text-lg mb-2 text-a-black">Menu</h1></li>
+		<ul class="flex w-56 flex-col items-center gap-2 font-light text-a-grey">
+			<li><h1 class=" mb-2 text-lg font-normal text-a-black">Menu</h1></li>
 			<li>
 				<a
-					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					href="/about-us">About Us</a
 				>
 			</li>
 			<li>
 				<a
-					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					href="/news-blog">News & Blog</a
 				>
 			</li>
 			<li>
 				<a
-					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					href="/upcoming">Upcoming</a
 				>
 			</li>
 			<li>
 				<a
-					class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					href="/take-action">Take Action</a
 				>
 			</li>
 		</ul>
-		<ul class="w-56 font-light flex-col flex items-center gap-2 text-a-grey">
-			<li><h1 class=" font-normal text-lg mb-2 text-a-black">Social</h1></li>
+		<ul class="flex w-56 flex-col items-center gap-2 font-light text-a-grey">
+			<li><h1 class=" mb-2 text-lg font-normal text-a-black">Social</h1></li>
 			<li>
 				<a
 					href={info.instagram}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>
 					<svg
 						fill="#454343"
@@ -63,7 +63,7 @@
 					href={info.x}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>
 					<svg
 						fill="#454343"
@@ -82,7 +82,7 @@
 					href={info.linkedin}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>
 					<svg
 						fill="#454343"
@@ -101,7 +101,7 @@
 					href={info.tiktok}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					><svg
 						fill="#454343"
 						width="20"
@@ -115,14 +115,14 @@
 				>
 			</li>
 		</ul>
-		<ul class="w-56 font-light flex-col flex items-center gap-2 text-a-grey text-center">
-			<li><h1 class=" font-normal text-lg mb-2 text-a-black">Contact Us</h1></li>
+		<ul class="flex w-56 flex-col items-center gap-2 text-center font-light text-a-grey">
+			<li><h1 class=" mb-2 text-lg font-normal text-a-black">Contact Us</h1></li>
 			<li>
 				<a
 					href={info.addressLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>
 					<svg
 						fill="#454343"
@@ -142,7 +142,7 @@
 					href={info.phoneLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>
 					<svg
 						fill="#454343"
@@ -161,7 +161,7 @@
 					href={info.emailLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex items-center gap-2 hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4"
+					class="flex items-center gap-2 rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>
 					<svg
 						fill="#454343"
@@ -178,6 +178,6 @@
 			</li>
 		</ul>
 	</div>
-	<hr class="border-a-black/10 rounded-full w-1/2 ml-auto mr-auto mt-6" />
-	<h1 class="ml-auto mr-auto w-fit text-sm my-3 text-a-grey">Designed & Created by Jimin Lee</h1>
+	<hr class="ml-auto mr-auto mt-6 w-1/2 rounded-full border-a-black/10" />
+	<h1 class="my-3 ml-auto mr-auto w-fit text-sm text-a-grey">Designed & Created by Jimin Lee</h1>
 </footer>

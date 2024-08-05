@@ -7,30 +7,30 @@
 	export { classList as class };
 </script>
 
-<nav class={twMerge('fixed top-0 w-full z-10 flex text-white px-12 py-6 items-center', classList)}>
+<nav class={twMerge('fixed top-0 z-10 flex w-full items-center px-12 py-6 text-white', classList)}>
 	<a href="/" class="flex items-center">
-		<img src="/favicon-96.png" alt="" class="w-10 mr-2" />
-		<h1 class="font-semibold text-2xl">Artify4Kids</h1>
+		<img src="/favicon-96.png" alt="" class="mr-2 w-10" />
+		<h1 class="text-2xl font-semibold">Artify4Kids</h1>
 	</a>
-	<ul class="ml-auto text-lg list-none flex">
+	<ul class="ml-auto flex list-none text-lg">
 		<li>
 			<a
 				href="/about-us"
-				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4 py-1 leading-relaxed"
+				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>About Us</a
 			>
 		</li>
 		<li>
 			<a
 				href="/news-blog"
-				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4 py-1 leading-relaxed"
+				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>News & Blog</a
 			>
 		</li>
 		<li>
 			<a
 				href="/upcoming"
-				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl px-4 py-1 leading-relaxed"
+				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>Upcoming</a
 			>
 		</li>

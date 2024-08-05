@@ -25,11 +25,11 @@
 <svelte:window bind:scrollY={$scrollDistance} />
 
 <main>
-	<section id="header" class="min-h-lvh flex flex-col" bind:this={header}>
+	<section id="header" class="flex min-h-lvh flex-col" bind:this={header}>
 		<div class="absolute bottom-0 w-full">
-			<div class="flex w-full items-center flex-col text-white">
-				<h1 class="text-8xl font-bold mb-4">Artify4Kids</h1>
-				<p class=" font-light italic text-center w-[550px]">
+			<div class="flex w-full flex-col items-center text-white">
+				<h1 class="mb-4 text-8xl font-bold">Artify4Kids</h1>
+				<p class=" w-[550px] text-center font-light italic">
 					<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 					<span>free</span>
 					art programs to undeserved children in the <span>Bay Area</span>. Our goal is to provide a
@@ -49,38 +49,38 @@
 				<img
 					src="images/sm-2.png"
 					alt=""
-					class="slideInBottomSm object-bottom h-[40vh]"
+					class="slideInBottomSm h-[40vh] object-bottom"
 					id="sm-2"
 				/>
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col justify-center items-center gap-24 bg-a-yellow-bg text-a-black">
+	<section class="flex flex-col items-center justify-center gap-24 bg-a-yellow-bg text-a-black">
 		<Statistics stats={data.statObjects} />
-		<div class="flex items-center flex-wrap">
+		<div class="flex flex-wrap items-center">
 			<img
 				loading="lazy"
 				src="images/gtku.jpg"
 				alt=""
-				class="rounded-3xl mr-8 h-[270px] transition-transform hover:scale-105 duration-500"
+				class="mr-8 h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 			/>
 			<div class="w-[550px]">
-				<h1 class="font-bold text-5xl text-left">Get to know us</h1>
-				<p class="font-light text-left my-4 text-a-grey">
+				<h1 class="text-left text-5xl font-bold">Get to know us</h1>
+				<p class="my-4 text-left font-light text-a-grey">
 					Our team is made up of passionate individuals who are committed to our mission. Get to
 					know us and learn more about the people behind Artify4Kids.
 				</p>
 				<Button
 					href="/about-us"
 					text="About Us"
-					class="text-white border-2 bg-a-green border-a-green hover:bg-a-green-hover hover:border-a-green-hover"
+					class="border-2 border-a-green bg-a-green text-white hover:border-a-green-hover hover:bg-a-green-hover"
 				/>
 			</div>
 		</div>
-		<div class="flex items-center flex-wrap-reverse">
+		<div class="flex flex-wrap-reverse items-center">
 			<div class="w-[550px]">
-				<h1 class="font-bold text-5xl text-right">All the latest updates</h1>
-				<p class="font-light text-right my-4 text-a-grey">
+				<h1 class="text-right text-5xl font-bold">All the latest updates</h1>
+				<p class="my-4 text-right font-light text-a-grey">
 					Stay up-to-date with all the latest news and events happening at Artify4Kids. From new art
 					projects to volunteer opportunities, we have everything you need to know. Check out our
 					blog to catch the latest news and coverage on our events!
@@ -88,26 +88,26 @@
 				<Button
 					href="/news-blog"
 					text="News & Blog"
-					class="text-white border-2 bg-a-blue border-a-blue hover:bg-a-blue-hover hover:border-a-blue-hover float-right"
+					class="float-right border-2 border-a-blue bg-a-blue text-white hover:border-a-blue-hover hover:bg-a-blue-hover"
 				/>
 			</div>
 			<img
 				loading="lazy"
 				src="images/atlu.jpg"
 				alt=""
-				class="rounded-3xl ml-8 h-[270px] transition-transform hover:scale-105 duration-500"
+				class="ml-8 h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 			/>
 		</div>
-		<div class="flex items-center flex-wrap">
+		<div class="flex flex-wrap items-center">
 			<img
 				src="images/uap.jpg"
 				alt=""
-				class="rounded-3xl mr-8 h-[270px] transition-transform hover:scale-105 duration-500"
+				class="mr-8 h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 				loading="lazy"
 			/>
 			<div class="w-[550px]">
-				<h1 class="font-bold text-5xl text-left">Upcoming art projects</h1>
-				<p class="font-light text-left my-4 text-a-grey">
+				<h1 class="text-left text-5xl font-bold">Upcoming art projects</h1>
+				<p class="my-4 text-left font-light text-a-grey">
 					Our projects aim to provide a diverse range of art experiences to children of ages 6-11,
 					including painting, drawing, and other mediums. Take a look at our calendar for our next
 					events!
@@ -115,35 +115,35 @@
 				<Button
 					href="/upcoming"
 					text="Upcoming"
-					class="text-white border-2 bg-a-purple border-a-purple hover:bg-a-purple-hover hover:border-a-purple-hover"
+					class="border-2 border-a-purple bg-a-purple text-white hover:border-a-purple-hover hover:bg-a-purple-hover"
 				/>
 			</div>
 		</div>
 		<div
 			id="take-action"
-			class="max-w-[1000px] flex flex-col items-center bg-cover px-48 py-32 rounded-3xl bg-center transition-transform hover:scale-105 duration-500"
+			class="flex max-w-[1000px] flex-col items-center rounded-3xl bg-cover bg-center px-48 py-32 transition-transform duration-500 hover:scale-105"
 		>
-			<h1 class="font-bold text-5xl text-center text-white">How you can help</h1>
-			<p class="font-light text-center my-4 text-gray-200">
+			<h1 class="text-center text-5xl font-bold text-white">How you can help</h1>
+			<p class="my-4 text-center font-light text-gray-200">
 				There are several ways you can help us empower young artists. You can donate to our cause,
 				volunteer your time, or spread the word about our organization.
 			</p>
 			<Button
 				href="/take-action"
 				text="Take Action"
-				class="text-white border-2 bg-a-red border-a-red hover:bg-a-red-hover hover:border-a-red-hover"
+				class="border-2 border-a-red bg-a-red text-white hover:border-a-red-hover hover:bg-a-red-hover"
 			/>
 		</div>
-		<div class="w-full mb-24 flex flex-col items-center">
-			<h1 class="text-5xl text-a-black font-bold mb-7 text-center">Past Artwork</h1>
-			<div class="wrapper w-[90%] relative h-[400px] overflow-hidden">
+		<div class="mb-24 flex w-full flex-col items-center">
+			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Past Artwork</h1>
+			<div class="wrapper relative h-[400px] w-[90%] overflow-hidden">
 				{#each imgIndex as img}
 					<img
 						src={`past-artwork/past-artwork-${img}.webp`}
 						alt="Past artwork from Artify events"
 						loading="lazy"
 						style={`--n: ${img}`}
-						class="item w-[300px] h-[400px] rounded-3xl absolute left-full"
+						class="item absolute left-full h-[400px] w-[300px] rounded-3xl"
 					/>
 				{/each}
 			</div>

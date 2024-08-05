@@ -24,27 +24,27 @@
 <main>
 	<section
 		id="header"
-		class="h-[40vh] flex flex-col justify-center items-center bg-a-blue"
+		class="flex h-[40vh] flex-col items-center justify-center bg-a-blue"
 		bind:this={header}
 	>
-		<h1 class="text-white text-8xl font-bold mb-4">News & Blog</h1>
-		<p class="text-white font-light italic text-center w-[550px]">
+		<h1 class="mb-4 text-8xl font-bold text-white">News & Blog</h1>
+		<p class="w-[550px] text-center font-light italic text-white">
 			As a non-profit organization, we aim to provide accessible arts and crafts education to
 			underserved children in the Bay Area. Join us in empowering young artists!
 		</p>
 	</section>
 	<section class="bg-a-blue-bg">
-		<div class="flex py-32 gap-5 flex-wrap justify-center w-3/4 ml-auto mr-auto">
+		<div class="ml-auto mr-auto flex w-3/4 flex-wrap justify-center gap-5 py-32">
 			{#each data.posts as post}
 				<a href={`news-blog/${post.slug}`} class="h-96 w-72">
 					<div
 						style={`background-image: url(${post.thumbnail});`}
-						class={`h-96 w-72 bg-no-repeat rounded-3xl bg-[length:auto_55%] bg-[center_top] border-2 border-a-black/10 hover:-translate-y-2 transition-transform`}
+						class={`h-96 w-72 rounded-3xl border-2 border-a-black/10 bg-[length:auto_55%] bg-[center_top] bg-no-repeat transition-transform hover:-translate-y-2`}
 					>
 						<div class="h-[55%]"></div>
-						<div class="p-4 bg-white h-[45%] rounded-b-3xl">
-							<h2 class="text-a-grey font-light">{formatDate(post.date)}</h2>
-							<h1 class="font-bold text-xl text-a-black">{post.title}</h1>
+						<div class="h-[45%] rounded-b-3xl bg-white p-4">
+							<h2 class="font-light text-a-grey">{formatDate(post.date)}</h2>
+							<h1 class="text-xl font-bold text-a-black">{post.title}</h1>
 						</div>
 					</div>
 				</a>

@@ -21,11 +21,11 @@
 <main>
 	<section
 		id="header"
-		class="h-[40vh] flex flex-col justify-center items-center bg-a-purple"
+		class="flex h-[40vh] flex-col items-center justify-center bg-a-purple"
 		bind:this={header}
 	>
-		<h1 class="text-white text-8xl font-bold mb-4">Upcoming</h1>
-		<p class="text-white font-light italic text-center w-[550px]">
+		<h1 class="mb-4 text-8xl font-bold text-white">Upcoming</h1>
+		<p class="w-[550px] text-center font-light italic text-white">
 			Below are all the details about our scheduled events and lessons!
 		</p>
 	</section>

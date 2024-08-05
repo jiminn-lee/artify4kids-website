@@ -21,11 +21,11 @@
 <main>
 	<section
 		id="header"
-		class="h-[40vh] flex flex-col justify-center items-center bg-a-red"
+		class="flex h-[40vh] flex-col items-center justify-center bg-a-red"
 		bind:this={header}
 	>
-		<h1 class="text-white text-8xl font-bold mb-4">Take Action</h1>
-		<p class="text-white font-light italic text-center w-[550px]">
+		<h1 class="mb-4 text-8xl font-bold text-white">Take Action</h1>
+		<p class="w-[550px] text-center font-light italic text-white">
 			Whether you lean towards participating in person or if you'd rather contribute from the
 			coziness of your home, we have procedures tailored to your preferences!
 		</p>

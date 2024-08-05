@@ -2,13 +2,13 @@
 	export let stats = [];
 </script>
 
-<div id="statistics-container" class="flex justify-center mt-32 mb-10 gap-16 flex-wrap">
+<div id="statistics-container" class="mb-10 mt-32 flex flex-wrap justify-center gap-16">
 	{#each stats as stat}
-		<div class="text-center group transition-all hover:scale-105 duration-300">
-			<h1 class="font-bold text-5xl mb-4 text-a-red group-hover:text-a-red-hover transition-all">
+		<div class="group text-center transition-all duration-300 hover:scale-105">
+			<h1 class="mb-4 text-5xl font-bold text-a-red transition-all group-hover:text-a-red-hover">
 				{stat.value}
 			</h1>
-			<h1 class="font-semibold text-a-grey group-hover:text-a-black transition-all">
+			<h1 class="font-semibold text-a-grey transition-all group-hover:text-a-black">
 				{stat.label}
 			</h1>
 		</div>

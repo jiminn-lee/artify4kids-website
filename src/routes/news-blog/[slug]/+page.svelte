@@ -24,21 +24,21 @@
 
 <section
 	id="header"
-	class="h-[50vh] flex flex-col justify-center items-center bg-a-blue"
+	class="flex h-[50vh] flex-col items-center justify-center bg-a-blue"
 	bind:this={header}
 >
-	<h1 class="text-white text-8xl font-bold mb-8">News & Blog</h1>
-	<p class="text-white font-light italic text-center w-[550px]">
+	<h1 class="mb-8 text-8xl font-bold text-white">News & Blog</h1>
+	<p class="w-[550px] text-center font-light italic text-white">
 		As a non-profit organization, we aim to provide accessible arts and crafts education to
 		underserved children in the Bay Area. Join us in empowering young artists!
 	</p>
 </section>
-<article class="bg-a-blue-bg flex justify-center" id="article">
-	<div class="w-[1000px] bg-white rounded-3xl border-2 border-a-black/10 my-28">
-		<div class="pl-12 pt-12 pb-7 text-a-grey font-light flex">
+<article class="flex justify-center bg-a-blue-bg" id="article">
+	<div class="my-28 w-[1000px] rounded-3xl border-2 border-a-black/10 bg-white">
+		<div class="flex pb-7 pl-12 pt-12 font-light text-a-grey">
 			<a
 				href="/news-blog"
-				class="hover:bg-a-black/5 active:bg-a-black/10 transition-all rounded-3xl p-2"
+				class="rounded-3xl p-2 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				><svg
 					fill="#454343"
 					height="20"
