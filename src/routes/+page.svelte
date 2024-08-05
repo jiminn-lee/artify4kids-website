@@ -11,6 +11,8 @@
 		headerHeight.set(header.clientHeight);
 	});
 
+	let imgIndex = Array.from({ length: 17 }, (v, i) => i + 1);
+
 	export let data;
 </script>
 
@@ -60,7 +62,7 @@
 				loading="lazy"
 				src="images/gtku.jpg"
 				alt=""
-				class="rounded-3xl mr-8 scale-90 transition-transform hover:scale-95 duration-500"
+				class="rounded-3xl mr-8 h-[270px] transition-transform hover:scale-105 duration-500"
 			/>
 			<div class="w-[550px]">
 				<h1 class="font-bold text-5xl text-left">Get to know us</h1>
@@ -93,14 +95,14 @@
 				loading="lazy"
 				src="images/atlu.jpg"
 				alt=""
-				class="rounded-3xl ml-8 scale-90 transition-transform hover:scale-95 duration-500"
+				class="rounded-3xl ml-8 h-[270px] transition-transform hover:scale-105 duration-500"
 			/>
 		</div>
 		<div class="flex items-center flex-wrap">
 			<img
 				src="images/uap.jpg"
 				alt=""
-				class="rounded-3xl mr-8 scale-90 transition-transform hover:scale-95 duration-500"
+				class="rounded-3xl mr-8 h-[270px] transition-transform hover:scale-105 duration-500"
 				loading="lazy"
 			/>
 			<div class="w-[550px]">
@@ -119,7 +121,7 @@
 		</div>
 		<div
 			id="take-action"
-			class="max-w-[1000px] flex flex-col items-center mb-28 bg-cover px-48 py-32 rounded-3xl bg-center transition-transform hover:scale-105 duration-500"
+			class="max-w-[1000px] flex flex-col items-center bg-cover px-48 py-32 rounded-3xl bg-center transition-transform hover:scale-105 duration-500"
 		>
 			<h1 class="font-bold text-5xl text-center text-white">How you can help</h1>
 			<p class="font-light text-center my-4 text-gray-200">
@@ -131,6 +133,20 @@
 				text="Take Action"
 				class="text-white border-2 bg-a-red border-a-red hover:bg-a-red-hover hover:border-a-red-hover"
 			/>
+		</div>
+		<div class="w-full mb-24 flex flex-col items-center">
+			<h1 class="text-5xl text-a-black font-bold mb-7 text-center">Past Artwork</h1>
+			<div class="wrapper w-[90%] relative h-[400px] overflow-hidden">
+				{#each imgIndex as img}
+					<img
+						src={`past-artwork/past-artwork-${img}.webp`}
+						alt="Past artwork from Artify events"
+						loading="lazy"
+						style={`--n: ${img}`}
+						class="item w-[300px] h-[400px] rounded-3xl absolute left-full"
+					/>
+				{/each}
+			</div>
 		</div>
 	</section>
 </main>
@@ -185,5 +201,30 @@
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hych.jpg');
 		background-size: cover;
 		background-position: center;
+	}
+
+	.wrapper {
+		mask-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 1) 20%,
+			rgba(0, 0, 0, 1) 80%,
+			rgba(0, 0, 0, 0)
+		);
+	}
+
+	.item {
+		animation-name: scrollLeft;
+		animation-duration: 60s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		left: max(calc(17 * 300px), 100%);
+		animation-delay: calc(60s / 17 * (17 - var(--n)) * -1);
+	}
+
+	@keyframes scrollLeft {
+		to {
+			left: calc(-1 * 300px);
+		}
 	}
 </style>

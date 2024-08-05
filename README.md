@@ -9,6 +9,6 @@ To-do:
 - [x] update tiktok link
 - [x] improve faq
 - [x] format dates in blog
+- [x] past artwork in home page
 - [ ] responsive
-- [ ] past artwork in home page
 - [ ] take action
