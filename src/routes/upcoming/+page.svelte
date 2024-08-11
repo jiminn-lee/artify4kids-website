@@ -16,7 +16,12 @@
 	<script src="src/lib/grained.js"></script>
 </svelte:head>
 
-<svelte:window bind:scrollY={$scrollDistance} />
+<svelte:window
+	bind:scrollY={$scrollDistance}
+	on:resize={() => {
+		headerHeight.set(header.clientHeight);
+	}}
+/>
 
 <main>
 	<section
@@ -25,7 +30,7 @@
 		bind:this={header}
 	>
 		<h1 class="mb-4 text-8xl font-bold text-white">Upcoming</h1>
-		<p class="w-[550px] text-center font-light italic text-white">
+		<p class="mx-10 max-w-[550px] text-center font-light italic text-white">
 			Below are all the details about our scheduled events and lessons!
 		</p>
 	</section>
@@ -47,4 +52,7 @@
 </main>
 
 <style>
+	* {
+		position: relative;
+	}
 </style>

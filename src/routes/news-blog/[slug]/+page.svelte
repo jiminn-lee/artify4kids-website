@@ -20,7 +20,12 @@
 	<meta propery="og:title" content={data.meta.title} />
 </svelte:head>
 
-<svelte:window bind:scrollY={$scrollDistance} />
+<svelte:window
+	bind:scrollY={$scrollDistance}
+	on:resize={() => {
+		headerHeight.set(header.clientHeight);
+	}}
+/>
 
 <section
 	id="header"
@@ -34,7 +39,7 @@
 	</p>
 </section>
 <article class="flex justify-center bg-a-blue-bg" id="article">
-	<div class="my-28 w-[1000px] rounded-3xl border-2 border-a-black/10 bg-white">
+	<div class="my-28 w-[1000px] rounded-3xl border-2 border-a-blue-hover/50 bg-white">
 		<div class="flex pb-7 pl-12 pt-12 font-light text-a-grey">
 			<a
 				href="/news-blog"

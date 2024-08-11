@@ -22,14 +22,19 @@
 	<script src="src/lib/grained.js"></script>
 </svelte:head>
 
-<svelte:window bind:scrollY={$scrollDistance} />
+<svelte:window
+	bind:scrollY={$scrollDistance}
+	on:resize={() => {
+		headerHeight.set(header.clientHeight);
+	}}
+/>
 
 <main>
 	<section id="header" class="flex min-h-lvh flex-col" bind:this={header}>
 		<div class="absolute bottom-0 w-full">
 			<div class="flex w-full flex-col items-center text-white">
 				<h1 class="mb-4 text-8xl font-bold">Artify4Kids</h1>
-				<p class=" w-[550px] text-center font-light italic">
+				<p class="mx-10 max-w-[550px] text-center font-light italic">
 					<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 					<span>free</span>
 					art programs to undeserved children in the <span>Bay Area</span>. Our goal is to provide a
@@ -41,7 +46,7 @@
 				<img
 					src="images/sm-1.png"
 					alt=""
-					class="slideInBottomSm hobject-bottom h-[40vh]"
+					class="slideInBottomSm h-[40vh] object-bottom"
 					id="sm-1"
 				/>
 				<img src="images/lg-1.png" alt="" class="slideInBottom h-[45vh]" id="lg-1" />
@@ -57,14 +62,14 @@
 	</section>
 	<section class="flex flex-col items-center justify-center gap-24 bg-a-yellow-bg text-a-black">
 		<Statistics stats={data.statObjects} />
-		<div class="flex flex-wrap items-center">
+		<div class="flex flex-wrap items-center justify-center">
 			<img
 				loading="lazy"
 				src="images/gtku.jpg"
 				alt=""
-				class="mr-8 h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
+				class="h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 			/>
-			<div class="w-[550px]">
+			<div class="mx-10 mt-10 w-[550px]">
 				<h1 class="text-left text-5xl font-bold">Get to know us</h1>
 				<p class="my-4 text-left font-light text-a-grey">
 					Our team is made up of passionate individuals who are committed to our mission. Get to
@@ -77,8 +82,8 @@
 				/>
 			</div>
 		</div>
-		<div class="flex flex-wrap-reverse items-center">
-			<div class="w-[550px]">
+		<div class="flex flex-wrap-reverse items-center justify-center">
+			<div class="mx-10 mt-10 w-[550px]">
 				<h1 class="text-right text-5xl font-bold">All the latest updates</h1>
 				<p class="my-4 text-right font-light text-a-grey">
 					Stay up-to-date with all the latest news and events happening at Artify4Kids. From new art
@@ -95,17 +100,17 @@
 				loading="lazy"
 				src="images/atlu.jpg"
 				alt=""
-				class="ml-8 h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
+				class="h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 			/>
 		</div>
-		<div class="flex flex-wrap items-center">
+		<div class="flex flex-wrap items-center justify-center">
 			<img
 				src="images/uap.jpg"
 				alt=""
-				class="mr-8 h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
+				class="h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 				loading="lazy"
 			/>
-			<div class="w-[550px]">
+			<div class="mx-10 mt-10 w-[550px]">
 				<h1 class="text-left text-5xl font-bold">Upcoming art projects</h1>
 				<p class="my-4 text-left font-light text-a-grey">
 					Our projects aim to provide a diverse range of art experiences to children of ages 6-11,
@@ -121,7 +126,7 @@
 		</div>
 		<div
 			id="take-action"
-			class="flex max-w-[1000px] flex-col items-center rounded-3xl bg-cover bg-center px-48 py-32 transition-transform duration-500 hover:scale-105"
+			class="mx-10 flex max-w-[1000px] flex-col items-center rounded-3xl bg-cover bg-center px-16 py-32 transition-transform duration-500 hover:scale-105"
 		>
 			<h1 class="text-center text-5xl font-bold text-white">How you can help</h1>
 			<p class="my-4 text-center font-light text-gray-200">

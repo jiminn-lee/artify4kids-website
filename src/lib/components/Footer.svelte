@@ -20,6 +20,12 @@
 			<li>
 				<a
 					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
+					href="/chapters">Chapters</a
+				>
+			</li>
+			<li>
+				<a
+					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					href="/news-blog">News & Blog</a
 				>
 			</li>
