@@ -19,7 +19,7 @@
 <svelte:head>
 	<title>Artify4Kids</title>
 	<meta property="og:title" content="Artify4Kids" />
-	<script src="src/lib/grained.js"></script>
+	<script src="/grained.js"></script>
 </svelte:head>
 
 <svelte:window
@@ -33,8 +33,8 @@
 	<section id="header" class="flex min-h-lvh flex-col" bind:this={header}>
 		<div class="absolute bottom-0 w-full">
 			<div class="flex w-full flex-col items-center text-white">
-				<h1 class="mb-4 text-8xl font-bold">Artify4Kids</h1>
-				<p class="mx-10 max-w-[550px] text-center font-light italic">
+				<h1 class="mb-4 text-8xl font-bold drop-shadow-md">Artify4Kids</h1>
+				<p class="mx-10 max-w-[550px] text-center font-light italic drop-shadow-md">
 					<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 					<span>free</span>
 					art programs to undeserved children in the <span>Bay Area</span>. Our goal is to provide a
@@ -46,15 +46,15 @@
 				<img
 					src="images/sm-1.png"
 					alt=""
-					class="slideInBottomSm h-[40vh] object-bottom"
+					class="slideInBottomSm h-[40vh] object-bottom drop-shadow-md"
 					id="sm-1"
 				/>
-				<img src="images/lg-1.png" alt="" class="slideInBottom h-[45vh]" id="lg-1" />
-				<img src="images/lg-2.png" alt="" class="slideInBottom h-[45vh]" id="lg-2" />
+				<img src="images/lg-1.png" alt="" class="slideInBottom h-[45vh] drop-shadow-md" id="lg-1" />
+				<img src="images/lg-2.png" alt="" class="slideInBottom h-[45vh] drop-shadow-md" id="lg-2" />
 				<img
 					src="images/sm-2.png"
 					alt=""
-					class="slideInBottomSm h-[40vh] object-bottom"
+					class="slideInBottomSm h-[40vh] object-bottom drop-shadow-md"
 					id="sm-2"
 				/>
 			</div>

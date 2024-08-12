@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<script src="../src/lib/grained.js"></script>
+	<script src="/grained.js"></script>
 	<title>{data.meta.title} | Artify4Kids</title>
 	<meta propery="og:type" content="article" />
 	<meta propery="og:title" content={data.meta.title} />
@@ -65,3 +65,9 @@
 		</div>
 	</div>
 </article>
+
+<style>
+	* {
+		position: relative;
+	}
+</style>

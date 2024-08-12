@@ -13,7 +13,7 @@
 <svelte:head>
 	<title>Upcoming | Artify4Kids</title>
 	<meta property="og:title" content="Upcoming | Artify4Kids" />
-	<script src="src/lib/grained.js"></script>
+	<script src="/grained.js"></script>
 </svelte:head>
 
 <svelte:window
@@ -29,8 +29,8 @@
 		class="flex h-[40vh] flex-col items-center justify-center bg-a-purple"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-8xl font-bold text-white">Upcoming</h1>
-		<p class="mx-10 max-w-[550px] text-center font-light italic text-white">
+		<h1 class="mb-4 text-8xl font-bold text-white drop-shadow-md">Upcoming</h1>
+		<p class="mx-10 max-w-[550px] text-center font-light italic text-white drop-shadow-md">
 			Below are all the details about our scheduled events and lessons!
 		</p>
 	</section>

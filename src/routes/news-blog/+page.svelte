@@ -16,7 +16,7 @@
 <svelte:head>
 	<title>News & Blog | Artify4Kids</title>
 	<meta property="og:title" content="News & Blog | Artify4Kids" />
-	<script src="src/lib/grained.js"></script>
+	<script src="/grained.js"></script>
 </svelte:head>
 
 <svelte:window
@@ -32,8 +32,8 @@
 		class="flex h-[40vh] flex-col items-center justify-center bg-a-blue"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-8xl font-bold text-white">News & Blog</h1>
-		<p class="mx-10 max-w-[550px] text-center font-light italic text-white">
+		<h1 class="mb-4 text-8xl font-bold text-white drop-shadow-md">News & Blog</h1>
+		<p class="mx-10 max-w-[550px] text-center font-light italic text-white drop-shadow-md">
 			As a non-profit organization, we aim to provide accessible arts and crafts education to
 			underserved children in the Bay Area. Join us in empowering young artists!
 		</p>
@@ -43,7 +43,9 @@
 			{#each data.posts as post}
 				<a href={`news-blog/${post.slug}`} class="h-96 w-72">
 					<div
-						style={`background-image: url(${post.thumbnail});`}
+						style={post.thumbnail
+							? `background-image: url(${post.thumbnail});`
+							: 'background-color: lightsteelblue'}
 						class={`h-96 w-72 rounded-3xl border-2 border-a-blue-hover/50 bg-[length:auto_55%] bg-[center_top] bg-no-repeat transition-transform hover:-translate-y-2`}
 					>
 						<div class="h-[55%]"></div>

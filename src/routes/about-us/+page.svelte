@@ -32,7 +32,7 @@
 <svelte:head>
 	<title>About Us | Artify4Kids</title>
 	<meta property="og:title" content="About Us | Artify4Kids" />
-	<script src="src/lib/grained.js"></script>
+	<script src="/grained.js"></script>
 </svelte:head>
 
 <svelte:window
@@ -48,8 +48,8 @@
 		class="flex h-[40vh] flex-col items-center justify-center bg-a-yellow"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-8xl font-bold text-white">About Us</h1>
-		<p class="mx-10 max-w-[550px] text-center font-light italic text-white">
+		<h1 class="mb-4 text-8xl font-bold text-white drop-shadow-md">About Us</h1>
+		<p class="mx-10 max-w-[550px] text-center font-light italic text-white drop-shadow-md">
 			As a non-profit organization, we aim to provide accessible arts and crafts education to
 			underserved children in the Bay Area. Join us in empowering young artists!
 		</p>

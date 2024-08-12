@@ -1,8 +1,8 @@
 <script>
-	import Button from './Button.svelte';
+	import Button from '$lib/components/Button.svelte';
 
 	export let navClass =
-		'fixed top-0 z-10 flex w-full items-center px-12 py-6 text-white max-[985px]:hidden';
+		'fixed top-0 z-10 flex w-full items-center px-12 py-6 text-white max-[985px]:hidden drop-shadow-md';
 	export let buttonClass = 'border-2 border-white hover:bg-white hover:text-black';
 
 	export let mobileNavClass =

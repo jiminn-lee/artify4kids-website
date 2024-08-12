@@ -5,8 +5,9 @@
 The official website for Artify4Kids, a non-profit organization based in the Bay Area.
 
 ## To-Do
+
+- [x] Fix About Us yellow
+- [x] Update credits
+- [x] Add rest of blogs
 - [ ] Chapters page
-- [ ] Update credits
-- [ ] Fix About Us yellow
-- [ ] Add mascot images throughout
 - [ ] Deployment
