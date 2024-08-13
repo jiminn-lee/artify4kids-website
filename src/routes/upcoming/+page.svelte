@@ -26,11 +26,13 @@
 <main>
 	<section
 		id="header"
-		class="flex h-[40vh] flex-col items-center justify-center bg-a-purple"
+		class="flex h-[400px] flex-col items-center justify-center bg-a-purple"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-8xl font-bold text-white drop-shadow-md">Upcoming</h1>
-		<p class="mx-10 max-w-[550px] text-center font-light italic text-white drop-shadow-md">
+		<h1 class="mb-4 text-6xl font-bold text-white drop-shadow-md md:text-8xl">Upcoming</h1>
+		<p
+			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
+		>
 			Below are all the details about our scheduled events and lessons!
 		</p>
 	</section>

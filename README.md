@@ -1,13 +1,13 @@
-# Artify4Kids Website
+<img align="center" src="static/cover.png">
 
-<img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Svelte/svelte1.svg"> <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/TailwindCSS/tailwindcss1.svg"> <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Vercel/vercel1.svg">
+<h1 align="center">Artify4Kids Website</h1>
+<p align="center">The official website for Artify4Kids, a non-profit organization based in the Bay Area.</p>
 
-The official website for Artify4Kids, a non-profit organization based in the Bay Area.
+<div align="center">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Svelte/svelte1.svg"> <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/TailwindCSS/tailwindcss1.svg"> <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Vercel/vercel1.svg">
+</div>
 
 ## To-Do
 
-- [x] Fix About Us yellow
-- [x] Update credits
-- [x] Add rest of blogs
 - [ ] Chapters page
-- [ ] Deployment
+- [ ] Mascot photos

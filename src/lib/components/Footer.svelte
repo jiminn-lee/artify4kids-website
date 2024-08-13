@@ -3,14 +3,14 @@
 </script>
 
 <footer class="border-2 border-a-black/10 pt-10">
-	<a href="/" class="mb-10 flex items-center justify-center">
+	<a href="/" class="mb-5 flex items-center justify-center">
 		<img src="/favicon-96.png" alt="" class="mr-2 w-10" />
 		<h1 class="text-2xl font-semibold text-a-black">Artify4Kids</h1>
 	</a>
 	<hr class="mb-6 ml-auto mr-auto w-1/2 rounded-full border-a-black/10" />
-	<div class="flex justify-center">
+	<div class="flex flex-wrap justify-center gap-y-10">
 		<ul class="flex w-56 flex-col items-center gap-2 font-light text-a-grey">
-			<li><h1 class=" mb-2 text-lg font-normal text-a-black">Menu</h1></li>
+			<li><h1 class=" mb-2 text-lg font-medium text-a-black">Menu</h1></li>
 			<li>
 				<a
 					class="rounded-3xl px-4 transition-all hover:bg-a-black/5 active:bg-a-black/10"
@@ -43,7 +43,7 @@
 			</li>
 		</ul>
 		<ul class="flex w-56 flex-col items-center gap-2 font-light text-a-grey">
-			<li><h1 class=" mb-2 text-lg font-normal text-a-black">Social</h1></li>
+			<li><h1 class=" mb-2 text-lg font-medium text-a-black">Social</h1></li>
 			<li>
 				<a
 					href={info.instagram}
@@ -122,7 +122,7 @@
 			</li>
 		</ul>
 		<ul class="flex w-56 flex-col items-center gap-2 text-center font-light text-a-grey">
-			<li><h1 class=" mb-2 text-lg font-normal text-a-black">Contact Us</h1></li>
+			<li><h1 class=" mb-2 text-lg font-medium text-a-black">Contact Us</h1></li>
 			<li>
 				<a
 					href={info.addressLink}

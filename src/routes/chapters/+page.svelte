@@ -26,11 +26,13 @@
 <main>
 	<section
 		id="header"
-		class="flex h-[40vh] flex-col items-center justify-center bg-a-green"
+		class="flex h-[400px] flex-col items-center justify-center bg-a-green"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-8xl font-bold text-white drop-shadow-md">Chapters</h1>
-		<p class="mx-10 max-w-[550px] text-center font-light italic text-white drop-shadow-md">
+		<h1 class="mb-4 text-6xl font-bold text-white drop-shadow-md md:text-8xl">Chapters</h1>
+		<p
+			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
+		>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat doloremque reprehenderit
 			natus expedita nihil nesciunt eaque cum repudiandae aliquam eligendi.
 		</p>
