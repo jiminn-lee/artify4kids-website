@@ -32,7 +32,9 @@
 		class="flex h-[400px] flex-col items-center justify-center bg-a-blue"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-6xl font-bold text-white drop-shadow-md md:text-8xl">News & Blog</h1>
+		<h1 class="mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
+			News & Blog
+		</h1>
 		<p
 			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
 		>

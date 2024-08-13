@@ -29,7 +29,7 @@
 		class="flex h-[400px] flex-col items-center justify-center bg-a-red"
 		bind:this={header}
 	>
-		<h1 class="mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
+		<h1 class="mx-10 mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
 			Take Action
 		</h1>
 		<p

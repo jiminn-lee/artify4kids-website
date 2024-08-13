@@ -2,6 +2,10 @@
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight } from '$lib/stores';
 	import grainedOptions from '$lib/utils';
+	import Leaflet from '$lib/components/Leaflet.svelte';
+	import chapters from '$lib/chapters.js';
+
+	let selectedChapter = 0;
 
 	let header;
 	onMount(() => {
@@ -37,13 +41,11 @@
 			natus expedita nihil nesciunt eaque cum repudiandae aliquam eligendi.
 		</p>
 	</section>
-	<section class="h-lvh bg-a-green-bg p-28">
-		<!-- <iframe
-			loading="async"
-			class=" ml-auto mr-auto h-full w-full rounded-3xl border-2 border-a-green-hover/50"
-			title="Artify4Kids Chapters Map"
-			src="https://www.google.com/maps/d/u/0/embed?mid=1AmQBHhZogHoz8YNjap5WQOWk153gseo&ehbc=2E312F&noprof=1"
-		></iframe> -->
+	<section class="flex h-lvh bg-a-green-bg p-28">
+		<Leaflet view={[39.41369, -99.993224]} zoom={4} />
+		<!-- {#if selectedChapter === 0}
+			<h1 class="text-5xl font-bold">Bay Area, CA</h1>
+		{/if} -->
 	</section>
 </main>
 

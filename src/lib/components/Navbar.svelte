@@ -2,11 +2,11 @@
 	import Button from '$lib/components/Button.svelte';
 
 	export let navClass =
-		'fixed top-0 z-10 flex w-full items-center px-12 py-6 text-white max-[985px]:hidden drop-shadow-md';
+		'fixed top-0 z-10 flex w-full items-center px-6 md:px-12 py-6 text-white max-[985px]:hidden drop-shadow-md';
 	export let buttonClass = 'border-2 border-white hover:bg-white hover:text-black';
 
 	export let mobileNavClass =
-		'fixed top-0 z-10 flex w-full items-center justify-between px-12 py-6 text-white min-[986px]:hidden';
+		'fixed top-0 z-10 flex w-full items-center justify-between px-6 md:px-12 py-6 text-white min-[986px]:hidden';
 	export let mobileButtonClass =
 		'rounded-full border-2 p-2 border-white hover:bg-white group transition-all active:translate-y-0.5';
 	export let mobileSvgClass = 'fill-white group-hover:fill-a-black';

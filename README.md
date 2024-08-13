@@ -11,3 +11,5 @@
 
 - [ ] Chapters page
 - [ ] Mascot photos
+- [ ] Close button for mobile nav
+- [ ] Refactor header code
