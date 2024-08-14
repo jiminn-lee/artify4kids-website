@@ -35,10 +35,10 @@ const info = {
 			img: '/team/sophia-xie.webp'
 		},
 		{
-			name: 'Joyce Zhang',
+			name: 'Katherine Yu',
 			position: 'Design Leader',
-			email: 'joycezhang0819@gmail.com',
-			img: '/team/joyce-zhang.webp'
+			email: 'kat.yu1499@gmail.com',
+			img: '/team/katherine-yu.webp'
 		},
 		{
 			name: 'Daksha Gopal',

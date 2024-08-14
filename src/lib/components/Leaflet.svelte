@@ -17,7 +17,14 @@
 			throw new Error('Must set either bounds, or view and zoom.');
 		}
 
-		map = L.map(mapElement)
+		map = L.map(mapElement, {
+			minZoom: 4.5,
+			maxZoom: 9,
+			zoomSnap: 0.1,
+			doubleClickZoom: true,
+			scrollWheelZoom: false,
+			maxBounds: L.latLngBounds([55.934982, -136.513284], [15.456249, -59.978914])
+		})
 			.on('zoom', (e) => dispatch('zoom', e))
 			.on('popupopen', async (e) => {
 				await tick();
@@ -47,7 +54,7 @@
 	}
 </script>
 
-<div class="z-0 w-[1000px] rounded-3xl border-2 border-a-green-hover/50" bind:this={mapElement}>
+<div class="z-0 h-[800px] w-full" bind:this={mapElement}>
 	{#if map}
 		<slot />
 	{/if}

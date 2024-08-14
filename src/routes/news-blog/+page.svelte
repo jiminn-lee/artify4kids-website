@@ -38,8 +38,7 @@
 		<p
 			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
 		>
-			As a non-profit organization, we aim to provide accessible arts and crafts education to
-			underserved children in the Bay Area. Join us in empowering young artists!
+			Read the latest news of Artify through the news and blog posts below!
 		</p>
 	</section>
 	<section class="bg-a-blue-bg">
