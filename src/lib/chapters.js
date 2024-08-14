@@ -9,7 +9,13 @@ const chapters = [
 		location: 'New York City, NY',
 		coordinates: [40.71517, -74.005125],
 		link: 'https://www.instagram.com/nyc.artify4kids/',
-		headshots: []
+		headshots: [
+			'/chapters/nyc/0.webp',
+			'/chapters/nyc/1.webp',
+			'/chapters/nyc/2.webp',
+			'/chapters/nyc/3.webp',
+			'/chapters/nyc/4.webp'
+		]
 	},
 	{
 		index: 2,

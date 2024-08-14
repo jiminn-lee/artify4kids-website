@@ -32,7 +32,9 @@
 	class="flex h-[400px] flex-col items-center justify-center bg-a-blue"
 	bind:this={header}
 >
-	<h1 class="mb-4 text-6xl font-bold text-white drop-shadow-md md:text-8xl">News & Blog</h1>
+	<h1 class="mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
+		News & Blog
+	</h1>
 	<p
 		class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
 	>
@@ -41,7 +43,7 @@
 	</p>
 </section>
 <article class="flex justify-center bg-a-blue-bg" id="article">
-	<div class="my-28 w-[1000px] rounded-3xl border-2 border-a-blue-hover/50 bg-white">
+	<div class="w-[1000px] bg-white md:my-28 md:rounded-3xl md:border-2 md:border-a-blue-hover/50">
 		<div class="flex pb-7 pl-12 pt-12 font-light text-a-grey">
 			<a
 				href="/news-blog"
@@ -58,8 +60,8 @@
 				></a
 			>
 		</div>
-		<div class="px-28 pb-28">
-			<h1 class="text-4xl font-bold">{data.meta.title}</h1>
+		<div class="px-14 pb-28 md:px-28">
+			<h1 class="text-3xl font-bold md:text-4xl">{data.meta.title}</h1>
 			<h2 class="mb-14 mt-3">Published {formatDate(data.meta.date)}</h2>
 			<p class="font-light leading-relaxed">
 				<svelte:component this={data.content} />
