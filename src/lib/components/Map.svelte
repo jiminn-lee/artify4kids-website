@@ -3,6 +3,8 @@
 	import 'leaflet/dist/leaflet.css';
 	import chapters from '$lib/chapters';
 	import { selectedChapter } from '$lib/stores';
+	import markerIcon from 'leaflet/dist/images/marker-icon.png';
+	import shadowIcon from 'leaflet/dist/images/marker-shadow.png';
 
 	let mapEl;
 
@@ -21,8 +23,15 @@
 
 		leaflet.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
+		const icon = new L.Icon({
+			iconUrl: markerIcon,
+			iconSize: L.point(25, 41),
+			iconAnchor: [12, 41],
+			shadowUrl: shadowIcon
+		});
+
 		chapters.forEach((chapter, i) => {
-			const marker = leaflet.marker(chapter.coordinates).addTo(map);
+			const marker = leaflet.marker(chapter.coordinates, { icon: icon }).addTo(map);
 			marker.on('click', () => {
 				selectedChapter.set(i);
 			});
