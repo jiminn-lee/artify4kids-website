@@ -2,10 +2,9 @@
 	import { onMount } from 'svelte';
 	import { scrollDistance, headerHeight, selectedChapter } from '$lib/stores';
 	import grainedOptions from '$lib/utils';
-	import Leaflet from '$lib/components/Leaflet.svelte';
 	import chapters from '$lib/chapters.js';
 	import info from '$lib/info.js';
-	import Marker from '$lib/components/Marker.svelte';
+	import Map from '$lib/components/Map.svelte';
 	let header;
 	onMount(() => {
 		grained('#header', grainedOptions);
@@ -40,7 +39,7 @@
 		</p>
 	</section>
 	<section class="flex h-fit w-full flex-col-reverse bg-a-green-bg xl:flex-row">
-		{#if $selectedChapter === 0}
+		{#if $selectedChapter == 0}
 			<div
 				class="flex h-fit w-full flex-col items-center justify-center bg-white py-14 md:px-14 xl:h-[800px] xl:w-[800px] xl:border-r-2 xl:border-r-a-green-hover/50"
 			>
@@ -87,13 +86,15 @@
 					</h1>
 				</div>
 				<div class="flex flex-wrap justify-center gap-2">
-					{#each chapters[$selectedChapter].headshots as headshot}
-						<img
-							src={headshot}
-							alt=""
-							class="h-[150px] w-[150px] rounded-3xl border-2 border-a-green-hover/50 object-cover object-center transition-all hover:-translate-y-1"
-						/>
-					{/each}
+					{#if chapters[$selectedChapter].headshots}
+						{#each chapters[$selectedChapter].headshots as headshot}
+							<img
+								src={headshot}
+								alt=""
+								class="h-[150px] w-[150px] rounded-3xl border-2 border-a-green-hover/50 object-cover object-center transition-all hover:-translate-y-1"
+							/>
+						{/each}
+					{/if}
 				</div>
 				<button
 					class="mt-8 w-fit rounded-3xl border-2 border-a-red bg-a-red px-4 text-lg text-white transition-all hover:border-a-red-hover hover:bg-a-red-hover active:translate-y-0.5"
@@ -103,11 +104,7 @@
 				>
 			</div>
 		{/if}
-		<Leaflet view={[39.860084, -97.708122]} zoom="4.5">
-			{#each chapters as chapter}
-				<Marker latLng={chapter.coordinates} index={chapter.index} />
-			{/each}
-		</Leaflet>
+		<Map />
 	</section>
 </main>
 

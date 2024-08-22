@@ -37,8 +37,8 @@
 				<p class="max-w-[550px] text-center text-sm font-light italic drop-shadow-md md:text-base">
 					<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 					<span>free</span>
-					art programs to undeserved children in the <span>Bay Area</span>. Our goal is to provide a
-					safe and inclusive space for <span>young artists</span> to explore their creativity and develop
+					art programs to underserved children in the <span>Bay Area</span>. Our goal is to provide
+					a safe and inclusive space for <span>young artists</span> to explore their creativity and develop
 					their artistic skills.
 				</p>
 			</div>

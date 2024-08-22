@@ -35,8 +35,29 @@ const chapters = [
 		index: 4,
 		location: 'Las Vegas, NV',
 		coordinates: [36.166659, -115.141773],
+		link: 'https://www.instagram.com/lasvegas.artify4kids/',
+		headshots: []
+	},
+	{
+		index: 5,
+		location: 'Los Angeles, CA',
+		coordinates: [34.0529, -118.2426],
 		link: '',
 		headshots: []
+	},
+	{
+		index: 6,
+		location: 'Bucks County, PA',
+		coordinates: [40.4108, -75.2479],
+		link: 'https://www.instagram.com/bucks.artify4kids/',
+		headshots: []
+	},
+	{
+		index: 7,
+		location: 'Trenton, NJ',
+		coordinates: [40.2206, -74.7597],
+		link: 'https://www.instagram.com/trenton.artify4kids/',
+		headsots: []
 	}
 ];
 
