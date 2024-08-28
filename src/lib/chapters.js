@@ -22,42 +22,64 @@ const chapters = [
 		location: 'Aurora, IL',
 		coordinates: [41.767364, -88.32301],
 		link: 'https://www.instagram.com/aurora.artify4kids/',
-		headshots: []
+		headshots: [
+			'/chapters/aurora/0.webp',
+			'/chapters/aurora/1.webp',
+			'/chapters/aurora/2.webp',
+			'/chapters/aurora/3.webp'
+		]
 	},
 	{
 		index: 3,
 		location: 'Washington D.C',
 		coordinates: [38.900773, -77.038249],
 		link: 'https://www.instagram.com/dc.artify4kids/',
-		headshots: []
+		headshots: [
+			'/chapters/dc/0.webp',
+			'/chapters/dc/1.webp',
+			'/chapters/dc/2.webp',
+			'/chapters/dc/3.webp',
+			'/chapters/dc/4.webp',
+			'/chapters/dc/5.webp'
+		]
 	},
 	{
 		index: 4,
 		location: 'Las Vegas, NV',
 		coordinates: [36.166659, -115.141773],
 		link: 'https://www.instagram.com/lasvegas.artify4kids/',
-		headshots: []
+		headshots: ['/chapters/vegas/0.webp', '/chapters/vegas/1.webp', '/chapters/vegas/2.webp']
 	},
 	{
 		index: 5,
 		location: 'Los Angeles, CA',
 		coordinates: [34.0529, -118.2426],
 		link: '',
-		headshots: []
+		headshots: [
+			'/chapters/la/0.webp',
+			'/chapters/la/1.webp',
+			'/chapters/la/2.webp',
+			'/chapters/la/3.webp'
+		]
 	},
 	{
 		index: 6,
 		location: 'Bucks County, PA',
 		coordinates: [40.4108, -75.2479],
 		link: 'https://www.instagram.com/bucks.artify4kids/',
-		headshots: []
+		headshots: ['/chapters/bucks/0.webp', '/chapters/bucks/1.webp', '/chapters/bucks/2.webp']
 	},
 	{
 		index: 7,
 		location: 'Trenton, NJ',
 		coordinates: [40.2206, -74.7597],
 		link: 'https://www.instagram.com/trenton.artify4kids/',
-		headsots: []
+		headshots: [
+			'/chapters/trenton/0.webp',
+			'/chapters/trenton/1.webp',
+			'/chapters/trenton/2.webp',
+			'/chapters/trenton/3.webp'
+		]
 	}
 ];
 

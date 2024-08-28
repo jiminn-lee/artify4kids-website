@@ -15,8 +15,8 @@
 				minZoom: 4.5,
 				maxZoom: 9,
 				zoomSnap: 0.1,
-				doubleClickZoom: true,
-				scrollWheelZoom: false,
+				// doubleClickZoom: true,
+				// scrollWheelZoom: false,
 				maxBounds: L.latLngBounds([55.934982, -136.513284], [15.456249, -59.978914])
 			})
 			.setView([39.860084, -97.708122], 4.5);
