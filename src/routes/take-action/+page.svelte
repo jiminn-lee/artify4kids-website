@@ -59,6 +59,7 @@
 						rel="noopener noreferrer">Volunteer</a
 					></button
 				>
+				<a href="/pvsa" class="mt-4 text-sm font-light text-a-red underline">We offer PVSA!</a>
 			</div>
 		</div>
 		<div class="mx-10 flex flex-wrap justify-center gap-20">

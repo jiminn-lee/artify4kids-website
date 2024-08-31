@@ -17,9 +17,9 @@
 </script>
 
 <svelte:head>
+	<script src="/grained.js"></script>
 	<title>Artify4Kids</title>
 	<meta property="og:title" content="Artify4Kids" />
-	<script src="/grained.js"></script>
 </svelte:head>
 
 <svelte:window
