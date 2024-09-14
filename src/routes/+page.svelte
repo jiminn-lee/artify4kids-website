@@ -11,7 +11,7 @@
 		headerHeight.set(header.clientHeight);
 	});
 
-	let imgIndex = Array.from({ length: 17 }, (v, i) => i + 1);
+	let imgIndex = Array.from({ length: 21 }, (v, i) => i + 1);
 
 	export let data;
 </script>
@@ -70,7 +70,7 @@
 		<div class="flex flex-wrap items-center justify-center">
 			<img
 				loading="lazy"
-				src="images/gtku.jpg"
+				src="images/gtku.webp"
 				alt=""
 				class="h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 			/>
@@ -103,14 +103,14 @@
 			</div>
 			<img
 				loading="lazy"
-				src="images/atlu.jpg"
+				src="images/atlu.webp"
 				alt=""
 				class="h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 			/>
 		</div>
 		<div class="flex flex-wrap items-center justify-center">
 			<img
-				src="images/uap.jpg"
+				src="images/uap.webp"
 				alt=""
 				class="h-[270px] rounded-3xl transition-transform duration-500 hover:scale-105"
 				loading="lazy"
@@ -208,7 +208,7 @@
 	}
 
 	#take-action {
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hych.jpg');
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hych.webp');
 		background-size: cover;
 		background-position: center;
 	}
