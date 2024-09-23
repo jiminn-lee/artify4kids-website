@@ -6,9 +6,3 @@
 <div align="center">
   <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Svelte/svelte1.svg"> <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/TailwindCSS/tailwindcss1.svg"> <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Vercel/vercel1.svg">
 </div>
-
-## To-Do
-
-- [ ] Mascot photos
-- [ ] Close button for mobile nav
-- [ ] Refactor header code
