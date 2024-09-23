@@ -12,7 +12,7 @@
 		const leaflet = await import('leaflet');
 		const map = leaflet
 			.map(mapEl, {
-				minZoom: 4.5,
+				minZoom: 4.9,
 				maxZoom: 9,
 				zoomSnap: 0.1,
 				// doubleClickZoom: true,

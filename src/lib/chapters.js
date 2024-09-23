@@ -54,7 +54,7 @@ const chapters = [
 		index: 5,
 		location: 'Los Angeles, CA',
 		coordinates: [34.0529, -118.2426],
-		link: '',
+		link: 'https://www.instagram.com/losangeles.artify4kids/',
 		headshots: [
 			'/chapters/la/0.webp',
 			'/chapters/la/1.webp',
@@ -80,6 +80,53 @@ const chapters = [
 			'/chapters/trenton/2.webp',
 			'/chapters/trenton/3.webp'
 		]
+	},
+	{
+		index: 8,
+		location: 'Irvine, CA',
+		coordinates: [33.6846, -117.8265],
+		link: 'https://irvineartify.wixsite.com/website',
+		headshots: [
+			'/chapters/irvine/0.webp',
+			'/chapters/irvine/1.webp',
+			'/chapters/irvine/2.webp',
+			'/chapters/irvine/3.webp'
+		]
+	},
+	{
+		index: 9,
+		location: 'Plano, TX',
+		coordinates: [33.0198, -96.6989],
+		link: 'https://www.instagram.com/plano.artify4kids/',
+		headshots: [
+			'/chapters/plano/0.webp',
+			'/chapters/plano/1.webp',
+			'/chapters/plano/2.webp',
+			'/chapters/plano/3.webp',
+			'/chapters/plano/4.webp',
+			'/chapters/plano/5.webp'
+		]
+	},
+	{
+		index: 10,
+		location: 'Huntington Beach, CA',
+		coordinates: [33.6595, -117.9988],
+		link: 'https://www.instagram.com/hb.artify4kids/',
+		headshots: [
+			'/chapters/hb/0.webp',
+			'/chapters/hb/1.webp',
+			'/chapters/hb/2.webp',
+			'/chapters/hb/3.webp',
+			'/chapters/hb/4.webp',
+			'/chapters/hb/5.webp'
+		]
+	},
+	{
+		index: 11,
+		location: 'Houston, TX',
+		coordinates: [29.7601, -95.3701],
+		link: 'https://www.instagram.com/houston.artify4kids/',
+		headshots: ['/chapters/houston/0.webp', '/chapters/houston/1.webp', '/chapters/houston/2.webp']
 	}
 ];
 
