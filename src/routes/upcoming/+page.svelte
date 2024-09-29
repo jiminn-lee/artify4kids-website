@@ -1,41 +1,21 @@
 <script>
-	import { onMount } from 'svelte';
-	import { scrollDistance, headerHeight } from '$lib/stores';
-	import grainedOptions from '$lib/utils';
-
-	let header;
-	onMount(() => {
-		grained('#header', grainedOptions);
-		headerHeight.set(header.clientHeight);
-	});
+	import { scrollDistance } from '$lib/stores';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <svelte:head>
 	<title>Upcoming | Artify4Kids</title>
 	<meta property="og:title" content="Upcoming | Artify4Kids" />
-	<script src="/grained.js"></script>
 </svelte:head>
 
-<svelte:window
-	bind:scrollY={$scrollDistance}
-	on:resize={() => {
-		headerHeight.set(header.clientHeight);
-	}}
-/>
+<svelte:window bind:scrollY={$scrollDistance} />
 
 <main>
-	<section
-		id="header"
-		class="flex h-[400px] flex-col items-center justify-center bg-a-purple"
-		bind:this={header}
-	>
-		<h1 class="mb-4 text-6xl font-bold text-white drop-shadow-md md:text-8xl">Upcoming</h1>
-		<p
-			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
-		>
-			Below are all the details about our scheduled events and lessons!
-		</p>
-	</section>
+	<Header
+		title="Upcoming"
+		description="Below are all the details about our scheduled events and lessons!"
+		color="bg-a-purple"
+	/>
 	<section class="bg-a-purple-bg py-28">
 		<iframe
 			id="open-web-calendar"
@@ -52,9 +32,3 @@
 		></iframe>
 	</section>
 </main>
-
-<style>
-	* {
-		position: relative;
-	}
-</style>

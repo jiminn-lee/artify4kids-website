@@ -1,12 +1,13 @@
 <script>
 	import { scrollDistance } from '$lib/stores';
-	import Header from '$lib/components/Header.svelte';
 	import faqs from '$lib/faqs';
 	import info from '$lib/info';
+	import Header from '$lib/components/Header.svelte';
 
 	let faqAnswers = [];
 	let faqSymbols = [];
 	let faqIsToggled = [];
+
 	function faqToggle(index) {
 		if (faqIsToggled[index] != true) {
 			faqAnswers[index].classList.remove('h-0');

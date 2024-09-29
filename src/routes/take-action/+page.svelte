@@ -1,44 +1,21 @@
 <script>
-	import { onMount } from 'svelte';
-	import { scrollDistance, headerHeight } from '$lib/stores';
-	import grainedOptions from '$lib/utils';
-
-	let header;
-	onMount(() => {
-		grained('#header', grainedOptions);
-		headerHeight.set(header.clientHeight);
-	});
+	import { scrollDistance } from '$lib/stores';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <svelte:head>
 	<title>Take Action | Artify4Kids</title>
 	<meta property="og:title" content="About Us | Artify4Kids" />
-	<script src="/grained.js"></script>
 </svelte:head>
 
-<svelte:window
-	bind:scrollY={$scrollDistance}
-	on:resize={() => {
-		headerHeight.set(header.clientHeight);
-	}}
-/>
+<svelte:window bind:scrollY={$scrollDistance} />
 
 <main>
-	<section
-		id="header"
-		class="flex h-[400px] flex-col items-center justify-center bg-a-red"
-		bind:this={header}
-	>
-		<h1 class="mx-10 mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
-			Take Action
-		</h1>
-		<p
-			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
-		>
-			Whether you lean towards participating in person or if you'd rather contribute from the
-			coziness of your home, we have procedures tailored to your preferences!
-		</p>
-	</section>
+	<Header
+		title="Take Action"
+		description="Whether you lean towards participating in person or if you'd rather contribute from the coziness of your home, we have procedures tailored to your preferences!"
+		color="bg-a-red"
+	/>
 	<section class="flex flex-col items-center gap-20 bg-a-red-bg">
 		<div class="mt-28">
 			<div

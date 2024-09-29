@@ -1,21 +1,28 @@
 <script>
 	import { onMount } from 'svelte';
 	import { headerHeight } from '$lib/stores';
+	import grainedOptions from '$lib/utils';
 
 	let header;
 
-	onMount(() => {
-		headerHeight.set(header.clientHeight);
+	onMount(async () => {
+		await import('$lib/grained');
+		grained('#header', grainedOptions);
+		headerHeight.set(header.clientHeight - 200);
 	});
 </script>
 
-<svelte:window on:resize={headerHeight.set(header.clientHeight)} />
+<svelte:window on:resize={headerHeight.set(header.clientHeight - 200)} />
 
 <section id="header" class="flex min-h-lvh flex-col" bind:this={header}>
 	<div class="absolute bottom-0 w-full">
 		<div class="flex w-full flex-col items-center text-white">
-			<h1 class="mb-4 text-6xl font-bold drop-shadow-md md:text-8xl">Artify4Kids</h1>
-			<p class="max-w-[550px] text-center text-sm font-light italic drop-shadow-md md:text-base">
+			<h1 class="mb-4 text-6xl font-bold drop-shadow-[0_0_10px_rgba(0,0,0,0.2)] md:text-8xl">
+				Artify4Kids
+			</h1>
+			<p
+				class="max-w-[550px] text-center text-sm font-light italic drop-shadow-[0_0_10px_rgba(0,0,0,0.4)] md:text-base"
+			>
 				<span>Artify4Kids</span> is a 501c(3) <span>non-profit</span> organization that provides
 				<span>free</span>
 				art programs to underserved children in the <span>Bay Area</span>. Our goal is to provide a
