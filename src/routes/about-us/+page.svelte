@@ -1,15 +1,8 @@
 <script>
-	import { onMount } from 'svelte';
-	import { scrollDistance, headerHeight } from '$lib/stores';
+	import { scrollDistance } from '$lib/stores';
+	import Header from '$lib/components/Header.svelte';
 	import faqs from '$lib/faqs';
-	import grainedOptions from '$lib/utils';
 	import info from '$lib/info';
-
-	let header;
-	onMount(() => {
-		grained('#header', grainedOptions);
-		headerHeight.set(header.clientHeight);
-	});
 
 	let faqAnswers = [];
 	let faqSymbols = [];
@@ -32,32 +25,17 @@
 <svelte:head>
 	<title>About Us | Artify4Kids</title>
 	<meta property="og:title" content="About Us | Artify4Kids" />
-	<script src="/grained.js"></script>
 </svelte:head>
 
-<svelte:window
-	bind:scrollY={$scrollDistance}
-	on:resize={() => {
-		headerHeight.set(header.clientHeight);
-	}}
-/>
+<svelte:window bind:scrollY={$scrollDistance} />
 
 <main>
-	<section
-		id="header"
-		class="flex h-[400px] flex-col items-center justify-center bg-a-yellow"
-		bind:this={header}
-	>
-		<h1 class="mx-10 mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
-			About Us
-		</h1>
-		<p
-			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
-		>
-			As a non-profit organization, we aim to provide accessible arts and crafts education to
-			underserved children in the Bay Area. Join us in empowering young artists!
-		</p>
-	</section>
+	<Header
+		title="About Us"
+		description="As a non-profit organization, we aim to provide accessible arts and crafts education to
+		underserved children in the Bay Area. Join us in empowering young artists!"
+		color="bg-a-yellow"
+	/>
 	<section
 		class="flex flex-col items-center justify-center gap-24 bg-a-yellow-bg py-28 text-a-black"
 	>
@@ -118,9 +96,3 @@
 		</div>
 	</section>
 </main>
-
-<style>
-	* {
-		position: relative;
-	}
-</style>

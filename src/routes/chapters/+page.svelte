@@ -1,43 +1,24 @@
 <script>
-	import { onMount } from 'svelte';
-	import { scrollDistance, headerHeight, selectedChapter } from '$lib/stores';
-	import grainedOptions from '$lib/utils';
+	import { scrollDistance, selectedChapter } from '$lib/stores';
+	import Header from '$lib/components/Header.svelte';
+	import Map from '$lib/components/Map.svelte';
 	import chapters from '$lib/chapters.js';
 	import info from '$lib/info.js';
-	import Map from '$lib/components/Map.svelte';
-	let header;
-	onMount(() => {
-		grained('#header', grainedOptions);
-		headerHeight.set(header.clientHeight);
-	});
 </script>
 
 <svelte:head>
 	<title>Chapters | Artify4Kids</title>
 	<meta property="og:title" content="About Us | Artify4Kids" />
-	<script src="/grained.js"></script>
 </svelte:head>
 
-<svelte:window
-	bind:scrollY={$scrollDistance}
-	on:resize={() => {
-		headerHeight.set(header.clientHeight);
-	}}
-/>
+<svelte:window bind:scrollY={$scrollDistance} />
 
 <main>
-	<section
-		id="header"
-		class="flex h-[400px] flex-col items-center justify-center bg-a-green"
-		bind:this={header}
-	>
-		<h1 class="mb-4 text-6xl font-bold text-white drop-shadow-md md:text-8xl">Chapters</h1>
-		<p
-			class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
-		>
-			Check out other chapters of Artify4Kids through this interactive map!
-		</p>
-	</section>
+	<Header
+		title="Chapters"
+		description="Check out other chapters of Artify4Kids through this interactive map!"
+		color="bg-a-green"
+	/>
 	<section class="flex h-fit w-full flex-col-reverse bg-a-green-bg xl:flex-row">
 		{#if $selectedChapter == 0}
 			<div
