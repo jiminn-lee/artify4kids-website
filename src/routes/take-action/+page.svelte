@@ -39,6 +39,27 @@
 				<a href="/pvsa" class="mt-4 text-sm font-light text-a-red underline">We offer PVSA!</a>
 			</div>
 		</div>
+		<div class="">
+			<div
+				class="mx-10 flex max-w-[750px] flex-col items-center rounded-3xl border-2 border-a-red-hover/50 bg-white p-10 transition-all"
+			>
+				<h1 class="mb-4 text-center text-5xl font-bold text-a-black">Looking For a Treasurer!</h1>
+				<hr class="w-full rounded-full border-a-black/10" />
+				<p class="my-4 text-center font-light text-a-grey">
+					We are looking for a treasurer that is motivated and dedicated to achieving our cause. If
+					you are interested in applying, please read the attached document with application
+					instructions!
+				</p>
+				<button
+					class="w-fit rounded-3xl border-2 border-a-red bg-a-red px-4 text-lg text-white transition-all hover:border-a-red-hover hover:bg-a-red-hover active:translate-y-0.5"
+					><a
+						href="https://docs.google.com/document/d/16RNEOnpIOMSyWUW7CYJrpO1lJHB3JvaQN2B_YTR1Jlo/edit?usp=sharing"
+						target="_blank"
+						rel="noopener noreferrer">Learn More</a
+					></button
+				>
+			</div>
+		</div>
 		<div class="mx-10 flex flex-wrap justify-center gap-20">
 			<div class=" flex max-w-[550px] flex-col items-center">
 				<h1 class="mb-4 text-center text-4xl font-bold text-a-black">Create a Chapter</h1>
@@ -56,6 +77,12 @@
 						target="_blank"
 						rel="noopener noreferrer">Register</a
 					></button
+				>
+				<a
+					href="https://docs.google.com/document/d/1T_pj7HPHu0vNbDCn0vWHkK1RdkCBF5Y54I9ygADG2o4/edit?usp=sharing"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="mt-4 text-sm font-light text-a-red underline">Chapter guidelines</a
 				>
 			</div>
 			<div class=" flex max-w-[550px] flex-col items-center">
@@ -103,10 +130,6 @@
 					a short 10-15 minute video about your favorite art project/technique that will help kids
 					anywhere.
 				</p>
-				<!-- <button
-					class="w-fit rounded-3xl border-2 border-a-red bg-white px-4 text-lg text-a-red-hover transition-all hover:border-a-red-hover hover:bg-a-red-hover hover:text-white active:translate-y-0.5"
-					><a href="">Apply</a></button
-				> -->
 			</div>
 		</div>
 	</section>

@@ -1,47 +1,24 @@
 <script>
-	import { onMount } from 'svelte';
-	import { scrollDistance, headerHeight } from '$lib/stores';
-	import grainedOptions from '$lib/utils';
+	import { scrollDistance } from '$lib/stores';
 	import { formatDate } from '$lib/utils';
-
-	let header;
-	onMount(() => {
-		grained('#header', grainedOptions);
-		headerHeight.set(header.clientHeight);
-	});
+	import Header from '$lib/components/Header.svelte';
 
 	export let data;
 </script>
 
 <svelte:head>
-	<script src="/grained.js"></script>
 	<title>{data.meta.title} | Artify4Kids</title>
 	<meta propery="og:type" content="article" />
 	<meta propery="og:title" content={data.meta.title} />
 </svelte:head>
 
-<svelte:window
-	bind:scrollY={$scrollDistance}
-	on:resize={() => {
-		headerHeight.set(header.clientHeight);
-	}}
-/>
+<svelte:window bind:scrollY={$scrollDistance} />
 
-<section
-	id="header"
-	class="flex h-[400px] flex-col items-center justify-center bg-a-blue"
-	bind:this={header}
->
-	<h1 class="mb-4 text-center text-6xl font-bold text-white drop-shadow-md md:text-8xl">
-		News & Blog
-	</h1>
-	<p
-		class="mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-md md:text-base"
-	>
-		As a non-profit organization, we aim to provide accessible arts and crafts education to
-		underserved children in the Bay Area. Join us in empowering young artists!
-	</p>
-</section>
+<Header
+	title="News & Blog"
+	description="Read the latest news of Artify through the news and blog posts below!"
+	color="bg-a-blue"
+/>
 <article class="flex justify-center bg-a-blue-bg" id="article">
 	<div class="w-[1000px] bg-white md:my-28 md:rounded-3xl md:border-2 md:border-a-blue-hover/50">
 		<div class="flex pb-7 pl-12 pt-12 font-light text-a-grey">
