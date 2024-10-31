@@ -26,7 +26,7 @@
 					<div
 						style={post.thumbnail
 							? `background-image: url(${post.thumbnail});`
-							: 'background-color: lightsteelblue'}
+							: 'background-color: #64A3F5'}
 						class={`h-96 w-72 rounded-3xl border-2 border-a-blue-hover/50 bg-[length:auto_55%] bg-[center_top] bg-no-repeat transition-transform hover:-translate-y-2`}
 					>
 						<div class="h-[55%]"></div>
