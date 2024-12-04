@@ -7,43 +7,43 @@ const info = {
 	addressLink: 'https://maps.app.goo.gl/3ue2FGWr1GAMYf1a7',
 	phone: '669-236-9066',
 	phoneLink: `tel:+16692369066`,
-	email: 'artify4kids@gmail.com',
-	emailLink: 'mailto:artify4kids@gmail.com',
+	email: 'info@artify4kids.org',
+	emailLink: 'mailto:info@artify4kids.org',
 	team: [
 		{
 			name: 'Jessica Xiao',
 			position: 'Co-President',
-			email: 'yanyao16@gmail.com',
+			email: 'jessicaxiao@artify4kids.org',
 			img: '/team/jessica-xiao.webp'
 		},
 		{
 			name: 'Grace Huang',
 			position: 'Co-President',
-			email: 'grace.huang311@gmail.com',
+			email: 'gracehuang@artify4kids.org',
 			img: '/team/grace-huang.webp'
 		},
 		{
 			name: 'Leana Zhou',
 			position: 'Secretary',
-			email: 'lzhouo215@gmail.com',
+			email: 'leanazhou@artify4kids.org',
 			img: '/team/leana-zhou.webp'
 		},
 		{
 			name: 'Sophia Xie',
 			position: 'PR Leader',
-			email: 'raven.moon.april@gmail.com',
+			email: 'sophiaxie@artify4kids.org',
 			img: '/team/sophia-xie.webp'
 		},
 		{
 			name: 'Katherine Yu',
 			position: 'Design Leader',
-			email: 'kat.yu1499@gmail.com',
+			email: 'catherinexu@artify4kids.org',
 			img: '/team/katherine-yu.webp'
 		},
 		{
 			name: 'Daksha Gopal',
 			position: 'Communications Director',
-			email: 'reachdakshagopal@gmail.com',
+			email: 'dakshagopal@artify4kids.org',
 			img: '/team/daksha-gopal.webp'
 		}
 	]
