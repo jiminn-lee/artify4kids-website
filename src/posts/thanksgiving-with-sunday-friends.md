@@ -1,10 +1,11 @@
 ---
 title: Thanksgiving with Sunday Friends!
 date: '2024-12-30'
-thumbnail: ''
+thumbnail: '/post-images/thanksgiving-with-sunday-friends.png'
 published: true
 ---
 
+![Student drawing with a green highligher]({thumbnail})<br />
 This Thanksgiving, Artify got to participate in Sunday Friends’ Thanksgiving event! Our mission has always been to provide kids with the tools and opportunities to explore their creative potential, and this event gave us a chance to do just that!<br /><br />
 As families gathered at the event to celebrate Thanksgiving, we set up our tables with endless materials and supplies for several hands-on arts and crafts activities. Our booths quickly began to buzz with people from toddlers to adults, excited to make their very own works of art.<br /><br />
 One of the crowd favorites was our paper turkey craft. Using their hand as a template, artists drew their own turkeys, colored them with vibrant shades, and decorated them with googly eyes and colorful markers. We loved seeing their smiling faces as they proudly showed off their personalized turkeys! To bring an idea of the fall season indoors, we brought visitors on a mini scavenger hunt outside to find a leaf they could use to make their own mini “leaf people”, which allowed them to trace and color leaves in warm autumn tones. Another standout craft was our paper cornucopia. Using colorful construction paper and markers, children assembled their own cornucopias full of fruit and vegetables. It was heartwarming to see the kids get creative with the designs, adding their own twists by decorating their cornucopias with glitter and extra details.<br /><br />

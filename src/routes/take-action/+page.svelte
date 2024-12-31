@@ -39,25 +39,24 @@
 				<a href="/pvsa" class="mt-4 text-sm font-light text-a-red underline">We offer PVSA!</a>
 			</div>
 		</div>
-		<div class="">
-			<div
-				class="mx-10 flex max-w-[750px] flex-col items-center rounded-3xl border-2 border-a-red-hover/50 bg-white p-10 transition-all"
-			>
-				<h1 class="mb-4 text-center text-5xl font-bold text-a-black">Looking For a Treasurer!</h1>
+		<div class="mx-10 mb-10 flex flex-wrap justify-center gap-20">
+			<div class=" flex max-w-[550px] flex-col items-center">
+				<h1 class="mb-4 text-center text-4xl font-bold text-a-black">On-site Team</h1>
 				<hr class="w-full rounded-full border-a-black/10" />
 				<p class="my-4 text-center font-light text-a-grey">
-					We are looking for a treasurer that is motivated and dedicated to achieving our cause. If
-					you are interested in applying, please read the attached document with application
-					instructions!
+					This team is currently open to our San Jose chapter members. Attend volunteering events
+					and gain experience at hospitals, shelters, and schools by working with children
+					face-to-face to earn hours!
 				</p>
-				<button
-					class="w-fit rounded-3xl border-2 border-a-red bg-a-red px-4 text-lg text-white transition-all hover:border-a-red-hover hover:bg-a-red-hover active:translate-y-0.5"
-					><a
-						href="https://docs.google.com/document/d/16RNEOnpIOMSyWUW7CYJrpO1lJHB3JvaQN2B_YTR1Jlo/edit?usp=sharing"
-						target="_blank"
-						rel="noopener noreferrer">Learn More</a
-					></button
-				>
+			</div>
+			<div class=" flex max-w-[550px] flex-col items-center">
+				<h1 class="mb-4 text-center text-4xl font-bold text-a-black">Off-site Team</h1>
+				<hr class="w-full rounded-full border-a-black/10" />
+				<p class="my-4 text-center font-light text-a-grey">
+					This team is currently open to our San Jose chapter members. Contribute virtually and gain
+					volunteer hours by making cards for children in hospitals, making video tutorials, and
+					more!
+				</p>
 			</div>
 		</div>
 		<div class="mx-10 flex flex-wrap justify-center gap-20">
@@ -103,25 +102,26 @@
 				>
 			</div>
 		</div>
-		<div class="mx-10 mb-28 flex flex-wrap justify-center gap-20">
-			<div class=" flex max-w-[550px] flex-col items-center">
-				<h1 class="mb-4 text-center text-4xl font-bold text-a-black">Donate</h1>
-				<hr class="w-full rounded-full border-a-black/10" />
-				<p class="my-4 text-center font-light text-a-grey">
-					Your donations will help us to continue providing art education to underserved children in
-					the Bay Area. You can donate online or get in touch with us to learn more about other ways
-					to support our cause.
-				</p>
-				<button
-					class="w-fit rounded-3xl border-2 border-a-red bg-white px-4 text-lg text-a-red-hover transition-all hover:border-a-red-hover hover:bg-a-red-hover hover:text-white active:translate-y-0.5"
-					><a
-						href="https://www.gofundme.com/f/artify-nonprofit-buisness-campaign?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer"
-						target="_blank"
-						rel="noopener noreferrer">GoFundMe</a
-					></button
-				>
-			</div>
-			<div class=" flex max-w-[550px] flex-col items-center">
+		<div class="mx-10 flex flex-wrap justify-center gap-20">
+			<div class="mx-10 mb-28 flex flex-wrap justify-center gap-20">
+				<div class=" flex max-w-[550px] flex-col items-center">
+					<h1 class="mb-4 text-center text-4xl font-bold text-a-black">Donate</h1>
+					<hr class="w-full rounded-full border-a-black/10" />
+					<p class="my-4 text-center font-light text-a-grey">
+						Your donations will help us to continue providing art education to underserved children
+						in the Bay Area. You can donate online or get in touch with us to learn more about other
+						ways to support our cause.
+					</p>
+					<button
+						class="w-fit rounded-3xl border-2 border-a-red bg-white px-4 text-lg text-a-red-hover transition-all hover:border-a-red-hover hover:bg-a-red-hover hover:text-white active:translate-y-0.5"
+						><a
+							href="https://www.gofundme.com/f/artify-nonprofit-buisness-campaign?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer"
+							target="_blank"
+							rel="noopener noreferrer">GoFundMe</a
+						></button
+					>
+				</div>
+				<!-- <div class=" flex max-w-[550px] flex-col items-center">
 				<h1 class="mb-4 text-center text-4xl font-bold text-a-black">Video Lesson</h1>
 				<hr class="w-full rounded-full border-a-black/10" />
 				<p class="my-4 text-center font-light text-a-grey">
@@ -130,6 +130,7 @@
 					a short 10-15 minute video about your favorite art project/technique that will help kids
 					anywhere.
 				</p>
+			</div> -->
 			</div>
 		</div>
 	</section>
