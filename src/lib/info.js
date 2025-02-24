@@ -45,6 +45,12 @@ const info = {
 			position: 'Communications Director',
 			email: 'dakshagopal@artify4kids.org',
 			img: '/team/daksha-gopal.webp'
+		},
+		{
+			name: 'Catherine Fang',
+			position: 'Treasurer',
+			email: 'catherinexu@artify4kids.org',
+			img: '/team/catherine-fang.webp'
 		}
 	]
 };
