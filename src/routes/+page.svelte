@@ -69,15 +69,15 @@
 				loading="lazy"
 			/>
 			<div class="mx-10 mt-10 max-w-[550px]">
-				<h1 class="text-left text-5xl font-bold">Upcoming art projects</h1>
+				<h1 class="text-left text-5xl font-bold">Event information</h1>
 				<p class="my-4 text-left font-light text-a-grey">
 					Our projects aim to provide a diverse range of art experiences to children of ages 6-11,
-					including painting, drawing, and other mediums. Take a look at our calendar for our next
-					events!
+					including painting, drawing, and other mediums. Take a look at detailed information about
+					our events!
 				</p>
 				<Button
-					href="/upcoming"
-					text="Upcoming"
+					href="/events"
+					text="Events"
 					class="border-2 border-a-purple bg-a-purple text-white hover:border-a-purple-hover hover:bg-a-purple-hover"
 				/>
 			</div>
@@ -98,7 +98,7 @@
 			/>
 		</div>
 		<div class="mb-24 flex w-full flex-col items-center">
-			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Past Artwork</h1>
+			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Past Events</h1>
 			<div class="wrapper relative h-[400px] w-[90%] overflow-hidden">
 				{#each imgIndex as img}
 					<img

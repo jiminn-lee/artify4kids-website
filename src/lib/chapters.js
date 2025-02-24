@@ -33,7 +33,7 @@ const chapters = [
 		index: 3,
 		location: 'Washington D.C',
 		coordinates: [38.900773, -77.038249],
-		link: 'https://www.instagram.com/dc.artify4kids/',
+		link: 'https://dcartify4kids.wixsite.com/dcartify4kids',
 		headshots: [
 			'/chapters/dc/0.webp',
 			'/chapters/dc/1.webp',
@@ -47,14 +47,14 @@ const chapters = [
 		index: 4,
 		location: 'Las Vegas, NV',
 		coordinates: [36.166659, -115.141773],
-		link: 'https://www.instagram.com/lasvegas.artify4kids/',
+		link: 'https://lasvegasartify4kid.wixsite.com/website',
 		headshots: ['/chapters/vegas/0.webp', '/chapters/vegas/1.webp', '/chapters/vegas/2.webp']
 	},
 	{
 		index: 5,
 		location: 'Los Angeles, CA',
 		coordinates: [34.0529, -118.2426],
-		link: 'https://www.instagram.com/losangeles.artify4kids/',
+		link: 'http://artify4kidsla.org',
 		headshots: [
 			'/chapters/la/0.webp',
 			'/chapters/la/1.webp',
@@ -66,7 +66,7 @@ const chapters = [
 		index: 6,
 		location: 'Bucks County, PA',
 		coordinates: [40.4108, -75.2479],
-		link: 'https://www.instagram.com/bucks.artify4kids/',
+		link: 'https://doylestownartify4kids.godaddysites.com/',
 		headshots: ['/chapters/bucks/0.webp', '/chapters/bucks/1.webp', '/chapters/bucks/2.webp']
 	},
 	{
@@ -97,7 +97,7 @@ const chapters = [
 		index: 9,
 		location: 'Plano, TX',
 		coordinates: [33.0198, -96.6989],
-		link: 'https://www.instagram.com/plano.artify4kids/',
+		link: 'https://planoartify.carrd.co/',
 		headshots: [
 			'/chapters/plano/0.webp',
 			'/chapters/plano/1.webp',
@@ -111,7 +111,7 @@ const chapters = [
 		index: 10,
 		location: 'Huntington Beach, CA',
 		coordinates: [33.6595, -117.9988],
-		link: 'https://www.instagram.com/hb.artify4kids/',
+		link: 'https://hbartify4kids.wixsite.com/artify4kids-hb',
 		headshots: [
 			'/chapters/hb/0.webp',
 			'/chapters/hb/1.webp',

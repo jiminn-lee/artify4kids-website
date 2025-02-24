@@ -28,6 +28,13 @@
 		</li>
 		<li>
 			<a
+				href="/events"
+				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+				>Events</a
+			>
+		</li>
+		<li>
+			<a
 				href="/chapters"
 				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>Chapters</a
@@ -38,13 +45,6 @@
 				href="/news-blog"
 				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 				>News & Blog</a
-			>
-		</li>
-		<li>
-			<a
-				href="/upcoming"
-				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
-				>Upcoming</a
 			>
 		</li>
 		<li class="pl-4"><Button text="Take Action" href="/take-action" class={buttonClass} /></li>
@@ -86,6 +86,14 @@
 			<li class="my-2">
 				<a
 					on:click={() => mobileDialog.close()}
+					href="/events"
+					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+					>Events</a
+				>
+			</li>
+			<li class="my-2">
+				<a
+					on:click={() => mobileDialog.close()}
 					href="/chapters"
 					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					>Chapters</a
@@ -97,14 +105,6 @@
 					href="/news-blog"
 					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
 					>News & Blog</a
-				>
-			</li>
-			<li class="my-2">
-				<a
-					on:click={() => mobileDialog.close()}
-					href="/upcoming"
-					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
-					>Upcoming</a
 				>
 			</li>
 			<li class="mt-4">

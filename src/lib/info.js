@@ -49,7 +49,7 @@ const info = {
 		{
 			name: 'Catherine Fang',
 			position: 'Treasurer',
-			email: '',
+			email: 'catherinexu@artify4kids.org',
 			img: '/team/catherine-fang.webp'
 		}
 	]
