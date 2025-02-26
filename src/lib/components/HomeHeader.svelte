@@ -34,20 +34,25 @@
 			<img
 				src="images/sm-1.png"
 				alt=""
-				class="slideInBottomSm hidden h-[40vh] object-bottom drop-shadow-md md:block"
+				class="slideInBottomSm hidden h-[40vh] object-bottom opacity-80 drop-shadow-md md:block"
 				id="sm-1"
 			/>
-			<img src="images/lg-1.png" alt="" class="slideInBottom h-[45vh] drop-shadow-md" id="lg-1" />
+			<img
+				src="images/lg-1.png"
+				alt=""
+				class="slideInBottom h-[45vh] opacity-85 drop-shadow-md"
+				id="lg-1"
+			/>
 			<img
 				src="images/lg-2.png"
 				alt=""
-				class="slideInBottom hidden h-[45vh] drop-shadow-md sm:block"
+				class="slideInBottom hidden h-[45vh] opacity-85 drop-shadow-md sm:block"
 				id="lg-2"
 			/>
 			<img
 				src="images/sm-2.png"
 				alt=""
-				class="slideInBottomSm hidden h-[40vh] object-bottom drop-shadow-md md:block"
+				class="slideInBottomSm hidden h-[40vh] object-bottom opacity-80 drop-shadow-md md:block"
 				id="sm-2"
 			/>
 		</div>
