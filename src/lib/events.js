@@ -9,7 +9,7 @@ const events = [
 	{
 		name: 'CHONC',
 		date: '2025-02-24',
-		image: '',
+		image: '/events/chonc.jpg',
 		details:
 			'Once a week, Artify provides 1:1 art lessons for children at CHONC, using a variety of tactile materials and mediums to help them find joy through art. Volunteers work individually with each child, guiding them simple projects to bring a creative and comforting experience during their time at the hospital.'
 	},
@@ -37,7 +37,7 @@ const events = [
 	{
 		name: 'West Valley Community Services Workshop',
 		date: '2025-02-24',
-		image: '',
+		image: '/events/westvalley.JPG',
 		details:
 			'Artify provides a monthly art program at West Valley Community Services, bringing families various supplies, projects, and sources of inspiration to help them make their own unique craft and works of art. These crafts are often themed to the time of year, bringing everyone a sense of creative joy for every season.'
 	}

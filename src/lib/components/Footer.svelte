@@ -180,7 +180,7 @@
 	</div>
 	<hr class="ml-auto mr-auto mt-6 w-1/2 rounded-full border-a-black/10" />
 	<h1 class="my-3 ml-auto mr-auto w-fit text-sm text-a-grey">
-		Designed & Created by <a
+		Designed & Developed by <a
 			href="https://github.com/jiminn-lee"
 			target="_blank"
 			rel="noopener noreferrer"

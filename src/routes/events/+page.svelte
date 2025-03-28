@@ -5,6 +5,7 @@
 	import Masonry from 'svelte-masonry';
 
 	import events from '$lib/events';
+	import Button from '$lib/components/Button.svelte';
 
 	let refresh;
 
@@ -33,6 +34,7 @@
 				class="mx-[5%] flex h-fit items-center rounded-3xl border-2 border-a-purple-hover/50 bg-white p-8 transition-all hover:-translate-y-2 max-[986px]:flex-col max-[986px]:gap-4"
 			>
 				<img
+					loading="lazy "
 					src={event.image}
 					alt=""
 					class="mr-6 h-[225px] min-w-[300px] rounded-xl bg-slate-400 object-cover"
@@ -40,6 +42,10 @@
 				<div>
 					<h1 class="mb-2 text-left text-3xl font-bold text-a-black">{event.name}</h1>
 					<p class="mr-[5%]">{event.details}</p>
+					<button
+						class="mt-2 w-fit rounded-3xl border-2 border-a-purple bg-a-purple px-4 text-lg text-white transition-all hover:border-a-purple-hover hover:bg-a-purple-hover active:translate-y-0.5"
+						><a href="/events/{i}">See more</a></button
+					>
 				</div>
 
 				<!-- <h2>{event.date}</h2> -->
