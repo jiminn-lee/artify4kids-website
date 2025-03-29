@@ -97,7 +97,7 @@
 				class="border-2 border-a-red bg-a-red text-white hover:border-a-red-hover hover:bg-a-red-hover"
 			/>
 		</div>
-		<div class="mb-24 flex w-full flex-col items-center">
+		<div class="mb-12 flex w-full flex-col items-center">
 			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Past Events</h1>
 			<div class="wrapper relative h-[400px] w-[90%] overflow-hidden">
 				{#each imgIndex as img}
@@ -110,6 +110,10 @@
 					/>
 				{/each}
 			</div>
+		</div>
+		<div class="mb-24 flex w-full flex-col items-center">
+			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Letter of Recognition</h1>
+			<img src="/letter.png" alt="" class="w-[1000px] rounded-3xl border-2" />
 		</div>
 	</section>
 </main>
