@@ -44,7 +44,7 @@
 					<p class="mr-[5%]">{event.details}</p>
 					<button
 						class="mt-2 w-fit rounded-3xl border-2 border-a-purple bg-a-purple px-4 text-lg text-white transition-all hover:border-a-purple-hover hover:bg-a-purple-hover active:translate-y-0.5"
-						><a href="/events/{i}">See more</a></button
+						><a href="/events/{i}">See gallery</a></button
 					>
 				</div>
 
