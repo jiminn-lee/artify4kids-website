@@ -37,7 +37,7 @@ const info = {
 		{
 			name: 'Katherine Yu',
 			position: 'Design Leader',
-			email: 'catherinexu@artify4kids.org',
+			email: 'katherineyu@artify4kids.org',
 			img: '/team/katherine-yu.webp'
 		},
 		{
