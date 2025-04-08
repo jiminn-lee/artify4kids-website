@@ -52,6 +52,13 @@ const events = [
 			'Artify provides a monthly art program at West Valley Community Services, bringing families various supplies, projects, and sources of inspiration to help them make their own unique craft and works of art. These crafts are often themed to the time of year, bringing everyone a sense of creative joy for every season.',
 		id: 'westvalley',
 		gallery: 0
+	},
+	{
+		name: 'Miscellaneous',
+		image: '/events/miscellaneous/miscellaneous-2.jpeg',
+		details: '',
+		id: 'miscellaneous',
+		gallery: 39
 	}
 ];
 
