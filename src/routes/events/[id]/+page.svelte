@@ -4,7 +4,6 @@
 	import events from '$lib/events.js';
 	import Page from '../+page.svelte';
 	import { page } from '$app/stores';
-	import lazyimage from '$lib/lazyimage.js';
 
 	onMount(() => {
 		headerHeight.set(0);
@@ -12,7 +11,6 @@
 	});
 
 	let imageLoad = $state(new Array(events[$page.params.id].gallery).fill(false));
-	$inspect(imageLoad);
 </script>
 
 <main class="flex h-fit flex-col justify-center gap-20 bg-a-purple-bg pt-20">
@@ -30,7 +28,7 @@
 				onload={() => {
 					imageLoad[i] = true;
 				}}
-				style={imageLoad[i] ? 'opacity:1' : 'opacity:0'}
+				style={imageLoad[i] ? 'opacity:1; position: block' : 'opacity:0; position: absolute'}
 			/>
 		{/each}
 	</div>
