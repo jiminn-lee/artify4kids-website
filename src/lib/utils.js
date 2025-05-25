@@ -14,3 +14,18 @@ const grainedOptions = {
 };
 
 export default grainedOptions;
+
+export async function load_image(url) {
+	return new Promise((resolve, reject) => {
+		const img = new Image();
+
+		if (url === null || url === undefined) {
+			reject('Given url for image was null or undefined');
+		} else {
+			img.src = url;
+		}
+
+		img.onload = () => resolve(img);
+		img.onerror = () => reject(new Error(`Failed to load image at ${url}`));
+	});
+}

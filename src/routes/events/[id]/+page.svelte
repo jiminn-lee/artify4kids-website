@@ -22,7 +22,7 @@
 			{/if}
 			<img
 				loading={i > 6 ? 'lazy' : 'eager'}
-				src="/events/{events[$page.params.id].id}/{events[$page.params.id].id}-{i + 1}.jpeg"
+				src="/events/{events[$page.params.id].id}/{events[$page.params.id].id}-{i + 1}.webp"
 				alt=""
 				class="aspect-square w-[300px] object-cover transition-opacity"
 				onload={() => {
