@@ -57,7 +57,7 @@
 					<div
 						id="team"
 						style={`background-image: url(${member.img});`}
-						class={`h-96 w-72 rounded-3xl border-2 border-a-yellow-hover/50 bg-white bg-[length:100%_auto] bg-[center_top_-1rem] bg-no-repeat transition-transform hover:-translate-y-2`}
+						class={`h-96 w-72 rounded-3xl border-2 border-a-yellow-hover/50 bg-white bg-size-[100%_auto] bg-position-[center_top_-1rem] bg-no-repeat transition-transform hover:-translate-y-2`}
 					>
 						<div class="h-[65%]"></div>
 						<div class="w-full bg-white p-4">

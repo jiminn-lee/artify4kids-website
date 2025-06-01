@@ -27,7 +27,7 @@
 		{title}
 	</h1>
 	<p
-		class="md mx-10 max-w-[550px] text-center text-sm font-light italic text-white drop-shadow-[0_0_10px_rgba(0,0,0,0.4)] md:text-base"
+		class="md mx-10 max-w-[550px] text-center text-sm font-light text-white italic drop-shadow-[0_0_10px_rgba(0,0,0,0.4)] md:text-base"
 	>
 		{description}
 	</p>
