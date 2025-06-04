@@ -19,12 +19,15 @@ const S3 = new S3Client({
 	responseChecksumValidation: 'WHEN_REQUIRED'
 });
 
-export async function GET({ request }) {
+export async function GET({ url }) {
 	try {
-		const images = await S3.send(
-			new ListObjectsV2Command({ Bucket: 'artify4kids', Prefix: 'ellis/' })
+		const event = url.searchParams.get('event');
+		const res = await S3.send(
+			new ListObjectsV2Command({ Bucket: 'artify4kids', Prefix: `${event}/` })
 		);
-		return json(images);
+		const objects = res.Contents || [];
+		const urls = objects.map((obj) => `https://images.artify4kids.org/${obj.Key}`);
+		return json({ urls: urls.reverse() });
 	} catch (error) {
 		console.error('Error fetching event images:', error);
 		return json({ error: 'Failed to fetch images.' }, { status: 500 });
