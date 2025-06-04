@@ -19,13 +19,16 @@
 				for (const entry of entries) {
 					if (entry.isIntersecting) {
 						visible = true;
-						observer.unobserve(entry.target);
+						loaded = false;
+					} else {
+						visible = false;
+						loaded = false;
 					}
 				}
 			},
 			{
 				root: null, // viewport
-				rootMargin: '100px', // start loading just before it scrolls fully into view
+				rootMargin: '200px', // start loading just before it scrolls fully into view
 				threshold: 0.1
 			}
 		);
@@ -50,7 +53,6 @@
 		<img
 			{src}
 			{alt}
-			loading="lazy"
 			on:load={handleLoad}
 			class="
         absolute inset-0
