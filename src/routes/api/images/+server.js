@@ -22,9 +22,15 @@ const S3 = new S3Client({
 export async function GET({ url }) {
 	try {
 		const event = url.searchParams.get('event');
-		const res = await S3.send(
-			new ListObjectsV2Command({ Bucket: 'artify4kids', Prefix: `${event}/` })
-		);
+		const misc = url.searchParams.get('miscellaneous');
+		let res = null;
+		if (misc === 'true') {
+			res = await S3.send(
+				new ListObjectsV2Command({ Bucket: 'artify4kids', Prefix: `miscellaneous/${event}/` })
+			);
+		} else {
+			res = await S3.send(new ListObjectsV2Command({ Bucket: 'artify4kids', Prefix: `${event}/` }));
+		}
 		const objects = res.Contents || [];
 		const urls = objects.map((obj) => `https://images.artify4kids.org/${obj.Key}`);
 		return json({ urls: urls.reverse() });

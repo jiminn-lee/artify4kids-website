@@ -26,6 +26,22 @@ const events = [
 		details:
 			'Once a week, Artify provides 1:1 art lessons for children at CHONC, using a variety of tactile materials and mediums to help them find joy through art. Volunteers work individually with each child, guiding them simple projects to bring a creative and comforting experience during their time at the hospital.',
 		id: 'chonc'
+	},
+	{
+		name: 'Summer Camp',
+		image: '/events/summer.webp',
+		id: 'summer'
+	},
+	{
+		name: 'Miscellaneous',
+		image: '/events/miscellaneous.webp',
+		events: [
+			{ name: 'Bishop Elementary School', image: '/events/bishop.webp', id: 'bishop' },
+			{ name: 'Cupertino Safety Fair', image: '/events/safety.webp', id: 'safety' },
+			{ name: 'John Muir Elementary School', image: '/events/muir.webp', id: 'muir' },
+			{ name: `Santana Row Farmer's Market`, image: '/events/farmer.webp', id: 'farmers' }
+		],
+		id: 'miscellaneous'
 	}
 ];
 
