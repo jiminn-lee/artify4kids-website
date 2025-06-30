@@ -1,6 +1,6 @@
 ---
 title: Artify4Kids at Cupertino Public Safety Fair
-date: '2025-4-05'
+date: '2025-04-05'
 thumbnail: '/post-images/artify4kids-at-cupertino-public-safety-fair-1.jpg'
 published: true
 ---
