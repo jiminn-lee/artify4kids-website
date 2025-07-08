@@ -3,10 +3,12 @@
 	import Button from '$lib/components/Button.svelte';
 	import HomeHeader from '$lib/components/HomeHeader.svelte';
 	import Statistics from '$lib/components/Statistics.svelte';
+	import { enhance } from '$app/forms';
 
 	let imgIndex = Array.from({ length: 21 }, (v, i) => i + 1);
 
 	export let data;
+	export let form;
 </script>
 
 <svelte:head>
@@ -18,7 +20,7 @@
 
 <main>
 	<HomeHeader />
-	<section class="flex flex-col items-center justify-center gap-24 bg-a-yellow-bg text-a-black">
+	<section class="bg-a-yellow-bg text-a-black flex flex-col items-center justify-center gap-24">
 		<Statistics stats={data.statObjects} />
 		<div class="flex flex-wrap items-center justify-center">
 			<img
@@ -29,21 +31,21 @@
 			/>
 			<div class="mx-10 mt-10 max-w-[550px]">
 				<h1 class="text-left text-5xl font-bold">Get to know us</h1>
-				<p class="my-4 text-left font-light text-a-grey">
+				<p class="text-a-grey my-4 text-left font-light">
 					Our team is made up of passionate individuals who are committed to our mission. Get to
 					know us and learn more about the people behind Artify4Kids.
 				</p>
 				<Button
 					href="/about-us"
 					text="About Us"
-					class="border-2 border-a-green bg-a-green text-white hover:border-a-green-hover hover:bg-a-green-hover"
+					class="border-a-green bg-a-green hover:border-a-green-hover hover:bg-a-green-hover border-2 text-white"
 				/>
 			</div>
 		</div>
 		<div class="flex flex-wrap-reverse items-center justify-center">
 			<div class="mx-10 mt-10 max-w-[550px]">
 				<h1 class="text-right text-5xl font-bold">All the latest updates</h1>
-				<p class="my-4 text-right font-light text-a-grey">
+				<p class="text-a-grey my-4 text-right font-light">
 					Stay up-to-date with all the latest news and events happening at Artify4Kids. From new art
 					projects to volunteer opportunities, we have everything you need to know. Check out our
 					blog to catch the latest news and coverage on our events!
@@ -51,7 +53,7 @@
 				<Button
 					href="/news-blog"
 					text="News & Blog"
-					class="float-right border-2 border-a-blue bg-a-blue text-white hover:border-a-blue-hover hover:bg-a-blue-hover"
+					class="border-a-blue bg-a-blue hover:border-a-blue-hover hover:bg-a-blue-hover float-right border-2 text-white"
 				/>
 			</div>
 			<img
@@ -70,7 +72,7 @@
 			/>
 			<div class="mx-10 mt-10 max-w-[550px]">
 				<h1 class="text-left text-5xl font-bold">Event information</h1>
-				<p class="my-4 text-left font-light text-a-grey">
+				<p class="text-a-grey my-4 text-left font-light">
 					Our projects aim to provide a diverse range of art experiences to children of ages 6-11,
 					including painting, drawing, and other mediums. Take a look at detailed information about
 					our events!
@@ -78,7 +80,7 @@
 				<Button
 					href="/events"
 					text="Events"
-					class="border-2 border-a-purple bg-a-purple text-white hover:border-a-purple-hover hover:bg-a-purple-hover"
+					class="border-a-purple bg-a-purple hover:border-a-purple-hover hover:bg-a-purple-hover border-2 text-white"
 				/>
 			</div>
 		</div>
@@ -94,11 +96,57 @@
 			<Button
 				href="/take-action"
 				text="Take Action"
-				class="border-2 border-a-red bg-a-red text-white hover:border-a-red-hover hover:bg-a-red-hover"
+				class="border-a-red bg-a-red hover:border-a-red-hover hover:bg-a-red-hover border-2 text-white"
 			/>
 		</div>
+		<div class="flex gap-4">
+			<div class="h-fit w-[500px] rounded-3xl border-2 bg-white p-8">
+				{#if form?.success && form?.type === 'newsletter'}
+					<h1 class="text-3xl font-bold">Thank you!</h1>
+					<p class="text-gray-500">You have successfully joined our subscriber list.</p>
+				{:else}
+					<h1 class="text-3xl font-bold">Newsletter</h1>
+					<p class="text-gray-500">Sign up for news and special offers!</p>
+					<form action="?/newsletter" method="POST" use:enhance>
+						<input
+							name="email"
+							type="email"
+							class="my-4 w-full border-2 p-2"
+							placeholder="Email"
+							required
+						/>
+						<button
+							class="border-a-red bg-a-red hover:border-a-red-hover hover:bg-a-red-hover w-full rounded-3xl border-2 px-4 text-lg text-white transition-all active:translate-y-0.5"
+							>Submit</button
+						>
+					</form>
+				{/if}
+			</div>
+			<div class="h-fit w-[500px] rounded-3xl border-2 bg-white p-8">
+				{#if form?.success && form?.type === 'volunteers'}
+					<h1 class="text-3xl font-bold">Thank you!</h1>
+					<p class="text-gray-500">You have successfully joined our subscriber list.</p>
+				{:else}
+					<h1 class="text-3xl font-bold">San Jose Volunteers</h1>
+					<p class="text-gray-500">Sign up for access to our volunteering opportunities!</p>
+					<form action="?/volunteers" method="POST" use:enhance>
+						<input
+							name="email"
+							type="email"
+							class="my-4 w-full border-2 p-2"
+							placeholder="Email"
+							required
+						/>
+						<button
+							class="border-a-red bg-a-red hover:border-a-red-hover hover:bg-a-red-hover w-full rounded-3xl border-2 px-4 text-lg text-white transition-all active:translate-y-0.5"
+							>Submit</button
+						>
+					</form>
+				{/if}
+			</div>
+		</div>
 		<div class="mb-12 flex w-full flex-col items-center">
-			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Past Events</h1>
+			<h1 class="text-a-black mb-7 text-center text-5xl font-bold">Past Events</h1>
 			<div class="wrapper relative h-[400px] w-[90%] overflow-hidden">
 				{#each imgIndex as img}
 					<img
@@ -112,7 +160,7 @@
 			</div>
 		</div>
 		<div class="mb-24 flex w-full flex-col items-center">
-			<h1 class="mb-7 text-center text-5xl font-bold text-a-black">Letter of Recognition</h1>
+			<h1 class="text-a-black mb-7 text-center text-5xl font-bold">Letter of Recognition</h1>
 			<img src="/letter.png" alt="" class="w-[1000px] rounded-3xl border-2" />
 		</div>
 	</section>
