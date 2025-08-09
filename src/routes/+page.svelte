@@ -99,7 +99,7 @@
 				class="border-a-red bg-a-red hover:border-a-red-hover hover:bg-a-red-hover border-2 text-white"
 			/>
 		</div>
-		<div class="flex gap-4">
+		<div class="flex flex-wrap justify-center gap-4">
 			<div class="h-fit w-[500px] rounded-3xl border-2 bg-white p-8">
 				{#if form?.success && form?.type === 'newsletter'}
 					<h1 class="text-3xl font-bold">Thank you!</h1>

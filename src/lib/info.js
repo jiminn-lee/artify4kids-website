@@ -30,7 +30,7 @@ const info = {
 		},
 		{
 			name: 'Sophia Xie',
-			position: 'PR Leader',
+			position: 'Treasurer',
 			email: 'sophiaxie@artify4kids.org',
 			img: '/team/sophia-xie.webp'
 		},
@@ -47,10 +47,16 @@ const info = {
 			img: '/team/daksha-gopal.webp'
 		},
 		{
-			name: 'Catherine Fang',
-			position: 'Treasurer',
-			email: 'catherinexu@artify4kids.org',
-			img: '/team/catherine-fang.webp'
+			name: 'Rohit Argulkar',
+			position: 'Co-Director of PR',
+			email: 'rohitargulkar@artify4kids.org',
+			img: '/team/rohit-argulkar.webp'
+		},
+		{
+			name: 'Mindy Chen',
+			position: 'Co-Director of PR',
+			email: 'mindychen@artify4kids.org',
+			img: '/team/mindy-chen.webp'
 		}
 	]
 };
