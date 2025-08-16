@@ -4,8 +4,10 @@
 	import HomeHeader from '$lib/components/HomeHeader.svelte';
 	import Statistics from '$lib/components/Statistics.svelte';
 	import { enhance } from '$app/forms';
+	import Marquee from '../lib/components/Marquee.svelte';
 
-	let imgIndex = Array.from({ length: 21 }, (v, i) => i + 1);
+	const imgTop = Array.from({ length: 18 }, (_, i) => i + 1);
+	const imgBottom = Array.from({ length: 18 }, (_, i) => i + 19);
 
 	export let data;
 	export let form;
@@ -147,16 +149,34 @@
 		</div>
 		<div class="mb-12 flex w-full flex-col items-center">
 			<h1 class="text-a-black mb-7 text-center text-5xl font-bold">Past Events</h1>
-			<div class="wrapper relative h-[400px] w-[90%] overflow-hidden">
-				{#each imgIndex as img}
-					<img
-						src={`past-artwork/past-artwork-${img}.webp`}
-						alt="Past artwork from Artify events"
-						loading="lazy"
-						style={`--n: ${img}`}
-						class="item absolute left-full h-[400px] w-[300px] rounded-3xl"
-					/>
-				{/each}
+
+			<div class="relative w-[90%]">
+				<Marquee pauseOnHover class="[--duration:80s]">
+					{#each imgTop as img}
+						<img
+							src={`past-artwork/past-artwork-${img}.webp`}
+							alt="Past artwork from Artify events"
+							loading="lazy"
+							class="h-[300px] w-full rounded-3xl"
+						/>
+					{/each}
+				</Marquee>
+				<Marquee pauseOnHover reverse class="[--duration:80s]">
+					{#each imgBottom as img}
+						<img
+							src={`past-artwork/past-artwork-${img}.webp`}
+							alt="Past artwork from Artify events"
+							loading="lazy"
+							class="h-[300px] w-full rounded-3xl"
+						/>
+					{/each}
+				</Marquee>
+				<div
+					class="dark:from-background from-a-yellow-bg pointer-events-none absolute inset-y-0 left-0 w-[100px] bg-gradient-to-r"
+				></div>
+				<div
+					class="dark:from-background from-a-yellow-bg pointer-events-none absolute inset-y-0 right-0 w-[100px] bg-gradient-to-l"
+				></div>
 			</div>
 		</div>
 		<div class="mb-24 flex w-full flex-col items-center">
@@ -171,30 +191,5 @@
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hych.webp');
 		background-size: cover;
 		background-position: center;
-	}
-
-	.wrapper {
-		mask-image: linear-gradient(
-			to right,
-			rgba(0, 0, 0, 0),
-			rgba(0, 0, 0, 1) 20%,
-			rgba(0, 0, 0, 1) 80%,
-			rgba(0, 0, 0, 0)
-		);
-	}
-
-	.item {
-		animation-name: scrollLeft;
-		animation-duration: 60s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		left: max(calc(17 * 300px), 100%);
-		animation-delay: calc(60s / 17 * (17 - var(--n)) * -1);
-	}
-
-	@keyframes scrollLeft {
-		to {
-			left: calc(-1 * 300px);
-		}
 	}
 </style>

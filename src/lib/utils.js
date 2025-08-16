@@ -1,3 +1,5 @@
+import { clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 export function formatDate(date, dateStyle = 'medium', locales = 'en') {
 	const formatter = new Intl.DateTimeFormat(locales, { dateStyle });
 	return formatter.format(new Date(date));
@@ -14,3 +16,7 @@ const grainedOptions = {
 };
 
 export default grainedOptions;
+
+export function cn(...inputs) {
+	return twMerge(clsx(inputs));
+}

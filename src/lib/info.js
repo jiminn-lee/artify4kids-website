@@ -35,18 +35,6 @@ const info = {
 			img: '/team/sophia-xie.webp'
 		},
 		{
-			name: 'Katherine Yu',
-			position: 'Design Leader',
-			email: 'katherineyu@artify4kids.org',
-			img: '/team/katherine-yu.webp'
-		},
-		{
-			name: 'Daksha Gopal',
-			position: 'Communications Director',
-			email: 'dakshagopal@artify4kids.org',
-			img: '/team/daksha-gopal.webp'
-		},
-		{
 			name: 'Rohit Argulkar',
 			position: 'Co-Director of PR',
 			email: 'rohitargulkar@artify4kids.org',
