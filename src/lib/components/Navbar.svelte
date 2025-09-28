@@ -22,28 +22,28 @@
 		<li>
 			<a
 				href="/about-us"
-				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+				class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 				>About Us</a
 			>
 		</li>
 		<li>
 			<a
 				href="/events"
-				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+				class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 				>Events</a
 			>
 		</li>
 		<li>
 			<a
 				href="/chapters"
-				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+				class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 				>Chapters</a
 			>
 		</li>
 		<li>
 			<a
 				href="/news-blog"
-				class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+				class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 				>News & Blog</a
 			>
 		</li>
@@ -68,7 +68,7 @@
 		>
 	</button>
 </nav>
-<dialog bind:this={mobileDialog} class="rounded-3xl">
+<dialog bind:this={mobileDialog} class="mx-auto my-auto rounded-3xl">
 	<div class="flex h-fit w-fit flex-col items-center justify-center p-12">
 		<a on:click={() => mobileDialog.close()} href="/" class="mb-2 flex items-center">
 			<img src="/favicon-96.png" alt="" class="mr-2 w-10" />
@@ -79,7 +79,7 @@
 				<a
 					on:click={() => mobileDialog.close()}
 					href="/about-us"
-					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+					class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 					>About Us</a
 				>
 			</li>
@@ -87,7 +87,7 @@
 				<a
 					on:click={() => mobileDialog.close()}
 					href="/events"
-					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+					class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 					>Events</a
 				>
 			</li>
@@ -95,7 +95,7 @@
 				<a
 					on:click={() => mobileDialog.close()}
 					href="/chapters"
-					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+					class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 					>Chapters</a
 				>
 			</li>
@@ -103,14 +103,14 @@
 				<a
 					on:click={() => mobileDialog.close()}
 					href="/news-blog"
-					class="rounded-3xl px-4 py-1 leading-relaxed transition-all hover:bg-a-black/5 active:bg-a-black/10"
+					class="hover:bg-a-black/5 active:bg-a-black/10 rounded-3xl px-4 py-1 leading-relaxed transition-all"
 					>News & Blog</a
 				>
 			</li>
 			<li class="mt-4">
 				<button
 					on:click={() => mobileDialog.close()}
-					class="w-fit rounded-3xl border-2 border-a-red bg-a-red px-4 text-lg text-white transition-all hover:border-a-red-hover hover:bg-a-red-hover active:translate-y-0.5"
+					class="border-a-red bg-a-red hover:border-a-red-hover hover:bg-a-red-hover w-fit rounded-3xl border-2 px-4 text-lg text-white transition-all active:translate-y-0.5"
 					><a href="/take-action">Take Action</a></button
 				>
 			</li>

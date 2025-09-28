@@ -1,6 +1,6 @@
 <script>
 	import { scrollDistance } from '$lib/stores';
-	import faqs from '$lib/faqs';
+	import faqs from '$lib/data/faqs';
 	import info from '$lib/info';
 	import Header from '$lib/components/Header.svelte';
 
@@ -38,11 +38,11 @@
 		color="bg-a-yellow"
 	/>
 	<section
-		class="flex flex-col items-center justify-center gap-24 bg-a-yellow-bg py-28 text-a-black"
+		class="bg-a-yellow-bg text-a-black flex flex-col items-center justify-center gap-24 py-28"
 	>
 		<div class="mx-10 flex flex-wrap items-center justify-center gap-12">
 			<h1 class="w-fit text-right text-5xl font-bold">Our misson <br /> & approach</h1>
-			<p class="max-w-[550px] font-light text-a-grey">
+			<p class="text-a-grey max-w-[550px] font-light">
 				At Artify4Kids, we believe that every child deserves access to art education. Our programs
 				provide a safe and nurturing environment for children to channel their creativity and
 				develop new skills. We prioritize diversity and inclusivity in all our programs, ensuring
@@ -57,15 +57,15 @@
 					<div
 						id="team"
 						style={`background-image: url(${member.img});`}
-						class={`h-96 w-72 rounded-3xl border-2 border-a-yellow-hover/50 bg-white bg-size-[100%_auto] bg-position-[center_top_-1rem] bg-no-repeat transition-transform hover:-translate-y-2`}
+						class={`border-a-yellow-hover/50 h-96 w-72 rounded-3xl border-2 bg-white bg-size-[100%_auto] bg-position-[center_top_-1rem] bg-no-repeat transition-transform hover:-translate-y-2`}
 					>
 						<div class="h-[65%]"></div>
 						<div class="w-full bg-white p-4">
-							<h2 class=" pt-2 font-light text-a-grey">{member.position}</h2>
-							<h1 class="text-xl font-bold text-a-black">{member.name}</h1>
+							<h2 class=" text-a-grey pt-2 font-light">{member.position}</h2>
+							<h1 class="text-a-black text-xl font-bold">{member.name}</h1>
 							<a
 								href={`mailto:${member.email}`}
-								class="font-light text-a-red underline transition-all hover:text-a-red-hover"
+								class="text-a-red hover:text-a-red-hover font-light underline transition-all"
 								>{member.email}</a
 							>
 						</div>
@@ -79,7 +79,7 @@
 				{#each faqs as faq (faq.index)}
 					<button
 						on:click={() => faqToggle(faq.index)}
-						class="max-w-[1000px] rounded-3xl border-2 border-a-yellow-hover/50 bg-white px-8 py-3"
+						class="border-a-yellow-hover/50 max-w-[1000px] rounded-3xl border-2 bg-white px-8 py-3"
 					>
 						<div class="flex items-center justify-between">
 							<h1 class="text-2xl font-semibold">{faq.question}</h1>
@@ -87,7 +87,7 @@
 						</div>
 						<p
 							bind:this={faqAnswers[faq.index]}
-							class="invisible h-0 text-left font-light leading-relaxed text-a-grey"
+							class="text-a-grey invisible h-0 text-left leading-relaxed font-light"
 						>
 							{faq.answer}
 						</p>

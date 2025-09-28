@@ -5,12 +5,13 @@
 	import chapters from '$lib/chapters.js';
 	import info from '$lib/info.js';
 	import { onMount } from 'svelte';
+	import { onDestroy } from 'svelte';
 
-		let globeElement;
+	let globeElement;
 	onMount(async () => {
 		const Globe = (await import('globe.gl')).default;
-		const globe = new Globe(globeElement)
-			.globeImageUrl('/map3.jpg')
+		 const globe = new Globe(globeElement)
+			.globeImageUrl('/map.jpg')
 			.pointOfView({ lat: 36, lng: -95 })
 			.globeOffset([0, 200])
 			// .htmlElementsData(impact.locations)
@@ -38,7 +39,9 @@
 		globe.controls().maxDistance = 200;
 		globe.controls().enableRotate = false;
 	});
-
+	let screenWidth = $state(0);
+	$effect(() => {
+	})
 </script>
 
 <svelte:head>
@@ -46,16 +49,16 @@
 	<meta property="og:title" content="About Us | Artify4Kids" />
 </svelte:head>
 
-<svelte:window bind:scrollY={$scrollDistance} />
+<svelte:window bind:scrollY={$scrollDistance} bind:innerWidth={screenWidth} />
 
-<main>
+<main class="overflow-x-hidden">
 	<Header
 		title="Chapters"
 		description="Check out other chapters of Artify4Kids through this interactive map!"
 		color="bg-a-green"
 	/>
 	<div class="bg-a-green-bg flex flex-col items-center">
-		<div bind:this={globeElement} class="z-50 -mt-48"></div>
+		<div bind:this={globeElement} class="-mt-48"></div>
 	</div>
 	<!-- <section class=" flex flex-col"> -->
 	<!-- </section> -->
