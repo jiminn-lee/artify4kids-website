@@ -1,31 +1,31 @@
 <script>
 	import { scrollDistance, selectedChapter } from '$lib/stores';
 	import Header from '$lib/components/Header.svelte';
-	import Map from '$lib/components/Map.svelte';
-	import chapters from '$lib/chapters.js';
-	import info from '$lib/info.js';
-	import { onMount } from 'svelte';
-	import { onDestroy } from 'svelte';
+	import chapters from '$lib/data/chapters.js';
+	import { mount, onMount } from 'svelte';
+	import GlobeMarker from '$lib/components/GlobeMarker.svelte';
+
+	$inspect(chapters);
 
 	let globeElement;
 	onMount(async () => {
 		const Globe = (await import('globe.gl')).default;
-		 const globe = new Globe(globeElement)
+		const globe = new Globe(globeElement)
 			.globeImageUrl('/map.jpg')
 			.pointOfView({ lat: 36, lng: -95 })
 			.globeOffset([0, 200])
-			// .htmlElementsData(impact.locations)
-			// .htmlElement((location) => {
-			// 	const globeMarkerContainer = document.createElement('div');
-			// 	globeMarkerContainer.style.transition = 'opacity 250ms';
-			// 	mount(GlobeMarker, {
-			// 		target: globeMarkerContainer,
-			// 		props: {
-			// 			location: location
-			// 		}
-			// 	});
-			// 	return globeMarkerContainer;
-			// })
+			.htmlElementsData(chapters)
+			.htmlElement((chapter) => {
+				const globeMarkerContainer = document.createElement('div');
+				// globeMarkerContainer.style.transition = 'opacity 250ms';
+				mount(GlobeMarker, {
+					target: globeMarkerContainer,
+					props: {
+						location: chapter.location
+					}
+				});
+				return globeMarkerContainer;
+			})
 			// .htmlElementVisibilityModifier((el, isVisible) => {
 			// 	if (isVisible) {
 			// 		el.style.opacity = '1';
@@ -34,14 +34,13 @@
 			// 	}
 			// })
 			// .atmosphereColor('#4338ca');
-			.backgroundColor("rgba(0,0,0,0)")
+			.backgroundColor('rgba(0,0,0,0)');
 		globe.controls().enableZoom = false;
 		globe.controls().maxDistance = 200;
 		globe.controls().enableRotate = false;
 	});
 	let screenWidth = $state(0);
-	$effect(() => {
-	})
+	$effect(() => {});
 </script>
 
 <svelte:head>

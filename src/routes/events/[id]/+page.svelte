@@ -1,7 +1,7 @@
 <script>
 	import { scrollDistance, headerHeight } from '$lib/stores';
 	import { onMount } from 'svelte';
-	import events from '$lib/events.js';
+	import events from '$lib/data/events.js';
 	import { page } from '$app/stores';
 	import ImageItem from '$lib/components/ImageItem.svelte';
 	import { ArrowLeft } from 'lucide-svelte';

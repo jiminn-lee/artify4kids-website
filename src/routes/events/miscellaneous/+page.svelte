@@ -1,7 +1,7 @@
 <script>
 	import { ArrowLeft } from 'lucide-svelte';
 
-	import events from '$lib/events.js';
+	import events from '$lib/data/events.js';
 </script>
 
 <main class="bg-a-purple-bg flex flex-col py-24">

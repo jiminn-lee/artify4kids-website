@@ -2,7 +2,7 @@
 	import { scrollDistance } from '$lib/stores';
 	import Header from '$lib/components/Header.svelte';
 
-	import events from '$lib/events';
+	import events from '$lib/data/events';
 </script>
 
 <svelte:head>

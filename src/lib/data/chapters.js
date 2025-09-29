@@ -3,16 +3,18 @@ import info from '../info';
 const chapters = [
 	{
 		location: 'Bay Area, CA',
-		coordinates: [37.339044, -121.942967],
+		lat: 37.339044,
+		lng: -121.942967,
 		team: info.team.map((member) => ({
 			name: member.name,
-			position: member.aposition,
+			position: member.position,
 			headshot: member.img
 		}))
 	},
 	{
-		location: 'Aurora, IL',
-		coordinates: [41.767364, -88.32301],
+		location: 'Aurora, CO',
+		lat: 39.7294,
+		lng: -104.8319,
 		team: [
 			{
 				name: 'Sonya Pales',
@@ -21,14 +23,15 @@ const chapters = [
 			},
 			{
 				name: 'Lily Teferi',
-				position: 'Seecretary',
-				headshot: '/chapters/aurora/lily-tefery.webp'
+				position: 'Secretary',
+				headshot: '/chapters/aurora/lily-teferi.webp'
 			}
 		]
 	},
 	{
 		location: 'Bucks County, PA',
-		coordinates: [0, 0],
+		lat: 40.4108,
+		lng: -75.2479,
 		team: [
 			{
 				name: 'Katherine Liu',
@@ -59,7 +62,8 @@ const chapters = [
 	},
 	{
 		location: 'Chicago, IL',
-		coordinates: [0, 0],
+		lat: 41.8832,
+		lng: -87.6324,
 		team: [
 			{
 				name: 'Sofia Alvarez',
@@ -80,7 +84,8 @@ const chapters = [
 	},
 	{
 		location: 'Coppell, TX',
-		coordinates: [0, 0],
+		lat: 32.9546,
+		lng: -98.015,
 		team: [
 			{
 				name: 'Atheeqa Shaik',
@@ -106,8 +111,9 @@ const chapters = [
 		]
 	},
 	{
-		location: 'D.C., VA',
-		coordinates: [0, 0],
+		location: 'Washington, D.C.',
+		lat: 38.900773,
+		lng: -77.038249,
 		team: [
 			{ name: 'Nimrah Imam', position: 'Co-President', headshot: '/chapters/dc/nimrah-imam.webp' },
 			{
@@ -121,15 +127,16 @@ const chapters = [
 				headshot: '/chapters/dc/ayan-imam.webp'
 			}
 			// {
-			// 	name: 'Luis Quinterro-Gallo',
-			// 	position: 'PR Leader',
-			// 	headshot: '/chapters/dc/luis-quinterro-gallo.webp'
+			//  name: 'Luis Quinterro-Gallo',
+			//  position: 'PR Leader',
+			//  headshot: '/chapters/dc/luis-quinterro-gallo.webp'
 			// }
 		]
 	},
 	{
 		location: 'Los Angeles, CA',
-		coordinates: [0, 0],
+		lat: 34.5522,
+		lng: -119.2437,
 		team: [
 			{
 				name: 'Catherine Zhu',
@@ -139,12 +146,12 @@ const chapters = [
 			{ name: 'Ivy Doan', position: 'Secretary', headshot: '/chapters/los-angeles/ivy-doan.webp' },
 			{
 				name: 'Michelle Vong',
-				position: 'Co-treasurer',
+				position: 'Co-Treasurer',
 				headshot: '/chapters/los-angeles/michelle-vong.webp'
 			},
 			{
 				name: 'Tiffany Saw',
-				position: 'Co-treasurer',
+				position: 'Co-Treasurer',
 				headshot: '/chapters/los-angeles/tiffany-saw.webp'
 			},
 			{ name: 'Julie Phan', position: 'PR', headshot: '/chapters/los-angeles/julie-phan.webp' }
@@ -152,7 +159,8 @@ const chapters = [
 	},
 	{
 		location: 'Huntington Beach, CA',
-		coordinates: [0, 0],
+		lat: 33.6595,
+		lng: -117.9988,
 		team: [
 			{
 				name: 'Preston Phan',
@@ -188,16 +196,17 @@ const chapters = [
 	},
 	{
 		location: 'Forsyth, GA',
-		coordinates: [0, 0],
+		lat: 33.0343,
+		lng: -83.9382,
 		team: [
 			{
 				name: 'Adrien Chung',
-				position: 'Co President',
+				position: 'Co-President',
 				headshot: '/chapters/forsyth/adrien-chung.webp'
 			},
 			{
 				name: 'Nithin Manikandan',
-				position: 'Co President',
+				position: 'Co-President',
 				headshot: '/chapters/forsyth/nithin-manikandan.webp'
 			},
 			{
@@ -206,15 +215,16 @@ const chapters = [
 				headshot: '/chapters/forsyth/siddharth-gotipatti.webp'
 			}
 			// {
-			// 	name: 'Devyani Khatri',
-			// 	position: 'Treasurer',
-			// 	headshot: '/chapters/forsyth/devyani-khatri.webp'
+			//  name: 'Devyani Khatri',
+			//  position: 'Treasurer',
+			//  headshot: '/chapters/forsyth/devyani-khatri.webp'
 			// }
 		]
 	},
 	{
 		location: 'New York City, NY',
-		coordinates: [0, 0],
+		lat: 40.71517,
+		lng: -74.005125,
 		team: [
 			{ name: 'Tisha Ray', position: 'President', headshot: '/chapters/nyc/tisha-ray.webp' },
 			{ name: 'Abida Marium', position: 'Secretary', headshot: '/chapters/nyc/abida-marium.webp' },
@@ -227,7 +237,8 @@ const chapters = [
 	},
 	{
 		location: 'Oklahoma City, OK',
-		coordinates: [0, 0],
+		lat: 35.4689,
+		lng: -97.5195,
 		team: [
 			{
 				name: 'Emelia Chambers',
@@ -278,26 +289,27 @@ const chapters = [
 	},
 	{
 		location: 'Plano, TX',
-		coordinates: [0, 0],
+		lat: 34.0198,
+		lng: -96.6989,
 		team: [
 			{
 				name: 'Annaly Nguyen',
-				position: 'Co-president',
+				position: 'Co-President',
 				headshot: '/chapters/plano/annaly-nguyen.webp'
 			},
 			// {
-			// 	name: 'Sophia Taufique',
-			// 	position: 'Co-president',
-			// 	headshot: '/chapters/plano/sophia-taufique.webp'
+			//  name: 'Sophia Taufique',
+			//  position: 'Co-president',
+			//  headshot: '/chapters/plano/sophia-taufique.webp'
 			// },
 			// {
-			// 	name: 'Lucas Daouda',
-			// 	position: 'Treasurer',
-			// 	headshot: '/chapters/plano/lucas-daouda.webp'
+			//  name: 'Lucas Daouda',
+			//  position: 'Treasurer',
+			//  headshot: '/chapters/plano/lucas-daouda.webp'
 			// },
 			{
 				name: 'Celeste Wenick',
-				position: 'PR leader',
+				position: 'PR Leader',
 				headshot: '/chapters/plano/celeste-wenick.webp'
 			}
 			// { name: 'Devi Mehta', position: 'Secretary', headshot: '/chapters/plano/devi-mehta.webp' }
@@ -305,7 +317,8 @@ const chapters = [
 	},
 	{
 		location: 'San Francisco, CA',
-		coordinates: [0, 0],
+		lat: 38.7749,
+		lng: -122.4194,
 		team: [
 			{
 				name: 'Mia Shan',
@@ -331,7 +344,8 @@ const chapters = [
 	},
 	{
 		location: 'Wylie, TX',
-		coordinates: [0, 0],
+		lat: 33.0063,
+		lng: -96.5391,
 		team: [
 			{
 				name: 'Jhanvi Dubey',
@@ -363,7 +377,8 @@ const chapters = [
 	},
 	{
 		location: 'Irvine, CA',
-		coordinates: [0, 0],
+		lat: 32.6846,
+		lng: -117.8265,
 		team: [
 			{ name: 'Adelyn Pham', position: 'President', headshot: '/chapters/irvine/adelyn-pham.webp' },
 			{
@@ -391,3 +406,5 @@ const chapters = [
 		]
 	}
 ];
+
+export default chapters;

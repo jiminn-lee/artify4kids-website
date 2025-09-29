@@ -21,6 +21,7 @@
 		"eslint-plugin-svelte": "^2.46.1",
 		"globals": "^15.15.0",
 		"mdsvex": "^0.11.2",
+		"phosphor-svelte": "^3.0.1",
 		"postcss": "^8.5.6",
 		"prettier": "^3.6.2",
 		"prettier-plugin-svelte": "^3.4.0",
