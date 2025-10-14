@@ -9,7 +9,7 @@
 
 <main>
 	<Header title={data.location} description="" color="bg-a-green" />
-	<div class="flex flex-col items-center gap-12">
+	<div class="flex flex-col items-center gap-12 py-28">
 		<h1 class="text-5xl font-bold">Meet the team</h1>
 		<div class="flex w-3/4 flex-wrap justify-center gap-5">
 			{#each data.team as member}

@@ -11,7 +11,7 @@
 	<Star
 		size={32}
 		weight="fill"
-		class="peer text-a-purple hover:text-a-red-hover drop-shadow-sm drop-shadow-white transition hover:z-auto hover:scale-150 active:scale-100"
+		class="peer  text-a-purple hover:text-a-red-hover drop-shadow-sm drop-shadow-white transition hover:z-auto hover:scale-150 active:scale-100"
 	/>
 	<!-- <StarFour
 		weight="fill"
@@ -21,7 +21,7 @@
 	<div
 		class="invisible absolute -top-8 z-50 flex flex-col items-center text-center text-nowrap text-white peer-hover:visible"
 	>
-		<h1 class="tracking-tigher bg-a-red w-fit p-1 font-serif text-xl leading-5 italic">
+		<h1 class="tracking-tigher bg-a-red z-50 w-fit p-1 font-serif text-xl leading-5 italic">
 			{location}
 		</h1>
 		<!-- <h2 class="text-shadow-md/60">

@@ -53,11 +53,28 @@
 <main class="overflow-x-hidden">
 	<Header
 		title="Chapters"
-		description="Check out other chapters of Artify4Kids through this interactive map!"
+		description="Check out other chapters of Artify4Kids!"
 		color="bg-a-green"
 	/>
-	<div class="bg-a-green-bg flex flex-col items-center">
+	<div class="bg-a-green-bg hidden flex-col items-center justify-center md:flex">
 		<div bind:this={globeElement} class="-mt-48"></div>
+	</div>
+	<div class="grid grid-cols-2 gap-4 px-4 py-14 md:hidden">
+		{#each chapters as chapter}
+			<a
+				href="/chapters/{chapter.location}"
+				class=" border-a-green-hover/50 flex h-full items-center justify-center rounded-3xl border-2 bg-white p-8 transition-all hover:scale-[105%]"
+			>
+				<div>
+					<h1 class="text-a-black text-center text-2xl font-bold">{chapter.location}</h1>
+					<!-- <p class="mr-[5%]">{}</p> -->
+					<!-- <button
+						class="border-a-purple bg-a-purple hover:border-a-purple-hover hover:bg-a-purple-hover mt-2 w-fit rounded-3xl border-2 px-4 text-lg text-white transition-all active:translate-y-0.5"
+						><a href="/events/{event.id}">See gallery</a></button
+					> -->
+				</div>
+			</a>
+		{/each}
 	</div>
 	<!-- <section class=" flex flex-col"> -->
 	<!-- </section> -->

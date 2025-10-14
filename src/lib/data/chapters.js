@@ -214,11 +214,6 @@ const chapters = [
 				position: 'PR Leader',
 				headshot: '/chapters/forsyth/siddharth-gotipatti.webp'
 			}
-			// {
-			//  name: 'Devyani Khatri',
-			//  position: 'Treasurer',
-			//  headshot: '/chapters/forsyth/devyani-khatri.webp'
-			// }
 		]
 	},
 	{
@@ -297,22 +292,22 @@ const chapters = [
 				position: 'Co-President',
 				headshot: '/chapters/plano/annaly-nguyen.webp'
 			},
-			// {
-			//  name: 'Sophia Taufique',
-			//  position: 'Co-president',
-			//  headshot: '/chapters/plano/sophia-taufique.webp'
-			// },
-			// {
-			//  name: 'Lucas Daouda',
-			//  position: 'Treasurer',
-			//  headshot: '/chapters/plano/lucas-daouda.webp'
-			// },
+			{
+				name: 'Sophia Taufique',
+				position: 'Co-president',
+				headshot: '/chapters/plano/sophia-taufique.webp'
+			},
+			{
+				name: 'Lucas Daouda',
+				position: 'Treasurer',
+				headshot: '/chapters/plano/lucas-daouda.webp'
+			},
 			{
 				name: 'Celeste Wenick',
 				position: 'PR Leader',
 				headshot: '/chapters/plano/celeste-wenick.webp'
-			}
-			// { name: 'Devi Mehta', position: 'Secretary', headshot: '/chapters/plano/devi-mehta.webp' }
+			},
+			{ name: 'Devi Mehta', position: 'Secretary', headshot: '/chapters/plano/devi-mehta.webp' }
 		]
 	},
 	{
@@ -348,13 +343,8 @@ const chapters = [
 		lng: -96.5391,
 		team: [
 			{
-				name: 'Jhanvi Dubey',
-				position: 'Co-President',
-				headshot: '/chapters/wylie/jhanvi-dubey.webp'
-			},
-			{
 				name: 'Vanshika Vittamsetti',
-				position: 'Co-President',
+				position: 'President',
 				headshot: '/chapters/wylie/vanshika-vittamsetti.webp'
 			},
 			{

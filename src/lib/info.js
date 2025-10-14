@@ -36,7 +36,7 @@ const info = {
 		},
 		{
 			name: 'Rohit Argulkar',
-			position: 'Co-Director of PR',
+			position: 'Chapter Head',
 			email: 'rohitargulkar@artify4kids.org',
 			img: '/team/rohit-argulkar.webp'
 		},
