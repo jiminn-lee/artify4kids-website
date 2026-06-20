@@ -9,7 +9,7 @@ const info = {
 	phoneLink: `tel:+16692369066`,
 	email: 'info@artify4kids.org',
 	emailLink: 'mailto:info@artify4kids.org',
-	team: [
+	board: [
 		{
 			name: 'Jessica Xiao',
 			position: 'Co-President',
@@ -46,7 +46,44 @@ const info = {
 			email: 'mindychen@artify4kids.org',
 			img: '/team/mindy-chen.webp'
 		}
+	],
+	team: [
+		{
+			name: 'Iris Zheng',
+			position: 'President',
+			email: 'iriszheng@artify4kids.org',
+			img: '/team/iris-zheng.webp'
+		},
+		{
+			name: 'Isabel Zheng',
+			position: 'Secretary',
+			email: 'isabelzheng@artify4kids.org',
+			img: '/team/isabel-zheng.webp'
+		},
+		{
+			name: 'Claire Dong',
+			position: 'Treasurer',
+			email: 'clairedong@artify4kids.org',
+			img: '/team/claire-dong.webp'
+		},
+		{
+			name: 'Isabella Nguyen',
+			position: 'Design Lead',
+			email: 'isabellanguyen@artify4kids.org',
+			img: '/team/isabella-nguyen.webp'
+		},
+		{
+			name: 'Nihita Gutlapalli',
+			position: 'Co-Director of PR',
+			email: 'nihitagutlapalli@artify4kids.org',
+			img: '/team/nihita-gutlapalli.webp'
+		},
+		{
+			name: 'Emily Mai',
+			position: 'Co-Director of PR',
+			email: 'emilymai@artify4kids.org',
+			img: '/team/emily-mai.webp'
+		}
 	]
 };
-
 export default info;
